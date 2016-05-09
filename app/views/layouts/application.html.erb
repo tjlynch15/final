@@ -8,7 +8,30 @@
 </head>
 <body>
 
-<%= yield %>
+  <nav>
+    <ul>
+      <li><%= link_to "Players", players_path %></li>
+      <li><%= link_to "Schedule", "" %></li>
+      <li><%= link_to "Tickets", "" %></li>
+      <li><%= link_to "Merchandise", categories_path %></li>
+          
+    </ul> 
+
+    <ul class="nav-right">
+      
+        <li><%= link_to "Sign Out", "" %></li>
+        <li><%= link_to "Sign Up", "" %></li>
+        <li><%= link_to "Sign In", "" %></li> 
+    </ul>
+
+  </nav>
+
+
+  <div>
+
+    <%= yield %>
+
+  </div>
 
 </body>
 </html>

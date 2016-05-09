@@ -1,29 +1,61 @@
+Player
+  number: integer
+  name: text
+  position: string
+  height: string
+  weight: integer
+  age: integer
+  birthplace: text
+
+Category
+  name: text
+
+Product
+  name: string
+  price: integer
+  description: text
+  photo_url: string
+  category_id: integer
+
+ShoppingCart
+  user_id: integer
+
+Contains
+  product_id: integer
+  shopping_cart_id: integer
+
+Order
+  date: string  
+  total_amount: integer
+  user_id: integer
+  credit_card_id: integer
+
+Customer
+  name: string
+  address: string
+  email: string
+
+OrdersItem
+  user_id: integer
+  product_id: integer
+
 User
   name: text
   email: text
   password: text
+  address: text
   
-Movie
-  title: text
-  image_url: text
-  mpaa: text
-  price: integer
-  year: integer
-  plot: text
-  director_id: integer
-  runtime: integer
+CreditCard
+  card_number: string
+  expiration: string
+  user_id: integer
 
-Director
-  name: text
-  photo_url: text
+Review
+  rating: integer
+  description: text
+  product_id: integer
+  user_id: integer
 
-Actor
-  name: text
-
-Role
-  movie_id: integer
-  actor_id: integer
-  character_name: text
 
 
 # Example table for a typical Book model.

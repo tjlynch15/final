@@ -1,0 +1,36 @@
+<!-- <ul> -->
+
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Name</th>
+    <th>Position</th>
+    <th><Height/th>
+    <th>Weight</th>
+    <th>Age</th>
+    <th>Birth Place</th>
+  </tr>
+
+
+<% @players.each do |player| %>
+  <!-- <li> -->
+  <tr>
+  	<td><%= player.number %></td> 
+  	<td><%= link_to player.name, "/players/#{player.id}" %></td>
+  	<td><%= player.position %></td> 
+  	<td><%= player.height %></td> 
+  	<td><%= player.weight %></td> 
+  	<td><%= player.age %></td> 
+  	<td><%= player.birthplace %></td>
+  </tr>	
+  <!-- </li> -->
+
+<% end %>
+
+</table>
+
+
+<!-- </ul> -->
+
+
+

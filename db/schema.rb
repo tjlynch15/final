@@ -13,4 +13,91 @@
 
 ActiveRecord::Schema.define(version: 0) do
 
+  create_table "categories", force: :cascade do |t|
+    t.text "name"
+  end
+
+  create_table "contains", force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "shopping_cart_id"
+  end
+
+  add_index "contains", ["product_id"], name: "index_contains_on_product_id"
+  add_index "contains", ["shopping_cart_id"], name: "index_contains_on_shopping_cart_id"
+
+  create_table "credit_cards", force: :cascade do |t|
+    t.string  "card_number"
+    t.string  "expiration"
+    t.integer "user_id"
+  end
+
+  add_index "credit_cards", ["user_id"], name: "index_credit_cards_on_user_id"
+
+  create_table "customers", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "email"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string  "date"
+    t.integer "total_amount"
+    t.integer "user_id"
+    t.integer "credit_card_id"
+  end
+
+  add_index "orders", ["credit_card_id"], name: "index_orders_on_credit_card_id"
+  add_index "orders", ["user_id"], name: "index_orders_on_user_id"
+
+  create_table "orders_items", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "product_id"
+  end
+
+  add_index "orders_items", ["product_id"], name: "index_orders_items_on_product_id"
+  add_index "orders_items", ["user_id"], name: "index_orders_items_on_user_id"
+
+  create_table "players", force: :cascade do |t|
+    t.integer "number"
+    t.text    "name"
+    t.string  "position"
+    t.string  "height"
+    t.integer "weight"
+    t.integer "age"
+    t.text    "birthplace"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string  "name"
+    t.integer "price"
+    t.text    "description"
+    t.string  "photo_url"
+    t.integer "category_id"
+  end
+
+  add_index "products", ["category_id"], name: "index_products_on_category_id"
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer "rating"
+    t.text    "description"
+    t.integer "product_id"
+    t.integer "user_id"
+  end
+
+  add_index "reviews", ["product_id"], name: "index_reviews_on_product_id"
+  add_index "reviews", ["user_id"], name: "index_reviews_on_user_id"
+
+  create_table "shopping_carts", force: :cascade do |t|
+    t.integer "user_id"
+  end
+
+  add_index "shopping_carts", ["user_id"], name: "index_shopping_carts_on_user_id"
+
+  create_table "users", force: :cascade do |t|
+    t.text "name"
+    t.text "email"
+    t.text "password"
+    t.text "address"
+  end
+
 end
