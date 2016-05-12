@@ -59,8 +59,31 @@ kane.save
 
 
 
+hat1 = Product.new
+hat1.price = 10000
+hat1.description = "hat1"
+hat1.photo_url = "hat1.jpeg"
+hat1.category_id = hats.id
+hat1.save
+
+hat2 = Product.new
+hat2.price = 12000
+hat2.description = "hat2"
+hat2.photo_url = "hat2.jpeg"
+hat2.category_id = hats.id
+hat2.save
+
+hat3 = Product.new
+hat3.price = 15000
+hat3.description = "hat3"
+hat3.photo_url = "hat3.jpeg"
+hat3.category_id = hats.id
+hat3.save
+
+
 
 print "There are now #{Category.count} categories in the database.\n"
+print "There are now #{Product.count} products in the database.\n"
 print "There are now #{Player.count} players in the database.\n"
 
 

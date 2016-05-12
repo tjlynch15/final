@@ -1,11 +1,18 @@
 Player
-  number: integer
   name: text
+  number: integer
   position: string
   height: string
   weight: integer
   age: integer
   birthplace: text
+
+Profile
+  name: text
+  picture_url: text
+  aquired: text
+  drafted: text
+  player_id: integer
 
 Category
   name: text
@@ -20,7 +27,7 @@ Product
 ShoppingCart
   user_id: integer
 
-Contains
+ContainsProduct
   product_id: integer
   shopping_cart_id: integer
 
@@ -29,11 +36,7 @@ Order
   total_amount: integer
   user_id: integer
   credit_card_id: integer
-
-Customer
-  name: string
-  address: string
-  email: string
+  shopping_cart_id: integer
 
 OrdersItem
   user_id: integer
@@ -55,6 +58,24 @@ Review
   description: text
   product_id: integer
   user_id: integer
+
+Game
+  date: string
+  location: text
+  opponent: text
+
+Ticket
+  date: string
+  price: integer
+  seat_location: text
+  game_id: integer
+  shopping_cart_id: integer
+
+# ContainsTicket
+#   ticket_id: integer
+#   shopping_cart_id: integer
+
+
 
 
 

@@ -1,4 +1,4 @@
-<!-- <ul> -->
+
 
 <table>
   <tr>
@@ -13,7 +13,7 @@
 
 
 <% @players.each do |player| %>
-  <!-- <li> -->
+
   <tr>
   	<td><%= player.number %></td> 
   	<td><%= link_to player.name, "/players/#{player.id}" %></td>
@@ -23,14 +23,13 @@
   	<td><%= player.age %></td> 
   	<td><%= player.birthplace %></td>
   </tr>	
-  <!-- </li> -->
 
 <% end %>
 
 </table>
 
 
-<!-- </ul> -->
+
 
 
 
