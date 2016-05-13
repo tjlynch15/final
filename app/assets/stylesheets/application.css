@@ -26,6 +26,7 @@ body {
   background-size: cover;    
 }
 
+
 input, select, textarea {
   margin-top: 8px;
 }
@@ -63,6 +64,13 @@ nav li {
 h1 {
   border-bottom: solid 2px #AAA;
   padding-bottom: 12px;
+}
+
+h2 {
+  margin-left: 10px;
+  border-bottom: solid 2px #AAA;
+  padding-bottom: 12px;
+  /*color: white;*/
 }
 
 a {
@@ -111,17 +119,33 @@ h1 small a {
   margin-left: 12px;
 }
 
+h2 small a {
+  font-size: 14px;
+  font-weight: normal;
+  /*color: #999;*/
+  margin-left: 12px;
+}
+
 .pull-right {
   float: right;
-  margin: 0 0 20px 20px;
+  margin: 0 20px 20px 20px;
 }
+
+.pull-left {
+  float: left;
+  margin: 20px 40px 0 20px;
+}
+
 .nav-right {
   float: right;
   padding: 0;
 }
+
 .details {
-  width: 70%;
+  width: 80%;
+  background-color: lightgray;
 }
+
 select { font-size: 18px; }
 
 form label { margin-right: 12px;}

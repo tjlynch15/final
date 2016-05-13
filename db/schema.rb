@@ -73,18 +73,18 @@ ActiveRecord::Schema.define(version: 0) do
     t.string  "name"
     t.integer "price"
     t.text    "description"
-    t.string  "photo_url"
     t.integer "category_id"
+    t.string  "image_url"
   end
 
   add_index "products", ["category_id"], name: "index_products_on_category_id"
 
   create_table "profiles", force: :cascade do |t|
     t.text    "name"
-    t.text    "picture_url"
     t.text    "aquired"
     t.text    "drafted"
     t.integer "player_id"
+    t.text    "image_url"
   end
 
   add_index "profiles", ["player_id"], name: "index_profiles_on_player_id"

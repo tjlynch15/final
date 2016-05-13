@@ -9,7 +9,7 @@ Player
 
 Profile
   name: text
-  picture_url: text
+  image_url: text
   aquired: text
   drafted: text
   player_id: integer
@@ -21,7 +21,7 @@ Product
   name: string
   price: integer
   description: text
-  photo_url: string
+  image_url: string
   category_id: integer
 
 ShoppingCart

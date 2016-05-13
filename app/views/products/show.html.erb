@@ -1,0 +1,40 @@
+
+<div class="details">
+
+<h2>
+  <%= @product.name %>
+  <small>
+    <%= link_to "Edit This Product", edit_product_path(@product.id) %>
+    <%= link_to "Delete This Product", product_path(@product.id), :method => :delete %>
+  </small>
+</h2>
+
+<!-- <div class="details"> -->
+
+  <p><%= image_tag @product.image_url, class: 'pull-left' %></p>
+  <p><%= link_to "Add to Cart", product_path(@product.id), class: 'pull-right' %></p>
+  <p><%= link_to image_tag("shopping_cart.png"), product_path(@product.id), class: 'pull-right' %></p>
+  
+
+  <p><strong>Price:</strong> <%= number_to_currency(@product.price/100) %></p>
+  <p><strong>Description:</strong> <%= @product.description %></p>
+
+
+
+  <h3>Add a Review</h3>
+
+  <%= form_tag "/reviews", :method => :post do %>
+    
+    <!-- <input type="hidden" name="movie_id" value="<%= @product.id %>"> -->
+    <%= hidden_field_tag :product_id, @product.id %>
+    
+    <br>
+    <%= text_area_tag :body, '', rows: 4, cols: 50 %>
+    <br>
+    <%= submit_tag "Add Review" %>
+  <% end %>
+
+  <br>
+  <h3>Reviews</h3>
+
+  </div>
