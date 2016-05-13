@@ -31,7 +31,8 @@ Final Project
 
 * Create a website for a sports team that will allow the user to obtain information about the team,
   including players, player profiles, and schedules. Additionally, the user will be able to purchase
-  team themed merchandise, as well as tickets to games. This is primarily an e-commerce website.
+  team themed merchandise, as well as tickets to games. This is primarily an e-commerce website. Included
+  in the final folder is an entity relationship diagram for the project.
 
 * The user will be able to access the team roster, consisting of information for each player, including
 	name, number, age, height, weight, and birthplace.
