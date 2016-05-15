@@ -45,6 +45,14 @@ ActiveRecord::Schema.define(version: 0) do
     t.text   "opponent"
   end
 
+  create_table "order_items", force: :cascade do |t|
+    t.integer "order_id"
+    t.integer "product_id"
+  end
+
+  add_index "order_items", ["order_id"], name: "index_order_items_on_order_id"
+  add_index "order_items", ["product_id"], name: "index_order_items_on_product_id"
+
   create_table "orders", force: :cascade do |t|
     t.string  "date"
     t.integer "total_amount"
@@ -56,14 +64,6 @@ ActiveRecord::Schema.define(version: 0) do
   add_index "orders", ["credit_card_id"], name: "index_orders_on_credit_card_id"
   add_index "orders", ["shopping_cart_id"], name: "index_orders_on_shopping_cart_id"
   add_index "orders", ["user_id"], name: "index_orders_on_user_id"
-
-  create_table "orders_items", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "product_id"
-  end
-
-  add_index "orders_items", ["product_id"], name: "index_orders_items_on_product_id"
-  add_index "orders_items", ["user_id"], name: "index_orders_items_on_user_id"
 
   create_table "players", force: :cascade do |t|
     t.integer "number"

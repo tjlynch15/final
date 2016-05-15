@@ -1,9 +1,8 @@
 <div class=details>
 
 <h2>My Cart</h2>
-<%#= link_to "Empty Cart", cart_url(@cart.id), :method => :delete %>
-
-<br><br>
+<%= link_to "Empty Cart", cart_url(session[:user_id]), :method => :delete %>
+<br>
 
 <% total = 0 %>
 
@@ -31,7 +30,7 @@
 <% end %>
 
 </table>
-
+<br>
 <p><b>Total: <%= number_to_currency(total) %></b></p>
 
 </div>

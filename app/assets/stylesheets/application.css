@@ -38,6 +38,7 @@ input, select, textarea {
 nav {
   background: #000;
   color: white;
+  /*width: 100%;*/
   padding: 8px;
   font-size: 18px;
 }
@@ -51,7 +52,6 @@ nav a {
 }
 nav a:hover {
   text-decoration: none;
-  /*color: red;*/
   border-bottom: solid 1px white;
 }
 nav ul {
@@ -62,6 +62,7 @@ nav ul {
 }
 nav li {
   display: inline;
+  color: white;
   list-style-type: none;
   padding-right: 20px;
 }
@@ -69,6 +70,7 @@ nav li {
 h1 {
   border-bottom: solid 2px #AAA;
   padding-bottom: 12px;
+  color: white;
 }
 
 h2 {
@@ -77,6 +79,12 @@ h2 {
   padding-bottom: 12px;
   /*color: white;*/
 }
+
+h3 {
+  padding-bottom: 12px;
+  color: white;
+}
+
 
 a {
   text-decoration: none;
@@ -91,7 +99,8 @@ a:hover {
 
 li {
   line-height: 1.7em;
-  color: white;
+  color: #000;
+  list-style-type: none;
 }
 
 .movie-box {
@@ -101,6 +110,10 @@ li {
   padding: 20px;
   padding-left: 0px;
   text-align: center;
+}
+.movie-box h3 a {
+  color: white;
+  background-color: darkred;
 }
 
 .movie-box img {
@@ -148,7 +161,9 @@ h2 small a {
 
 .details {
   width: 80%;
-  background-color: lightgray;
+  margin: auto;
+  /*text-align: center;*/
+  background-color: white;
 }
 
 select { font-size: 18px; }
@@ -157,7 +172,7 @@ form label { margin-right: 12px;}
 
 table {
   margin: 0 auto;
-  margin-top: 40px;*/
+  margin-top: 40px;
   text-align: center;
   border-collapse: collapse;
   width: 70%;
@@ -169,10 +184,10 @@ table th {
   background-color: gray;
 }
 table td {
-  border-bottom: solid 2px #000;
+  border: solid 2px #000;
   padding: 6px;
   color: #000;
-  background-color: gray;
+  background-color: lightgray;
 }
 
 
