@@ -15,20 +15,30 @@
       <li><%= link_to "Schedule", "" %></li>
       <li><%= link_to "Tickets", "" %></li>
       <li><%= link_to "Merchandise", categories_path %></li>
-          
-    </ul> 
+      <li><%= link_to "Users", users_path %></li>
+    </ul>
 
     <ul class="nav-right">
-      
-        <li><%= link_to "Sign Out", "" %></li>
-        <li><%= link_to "Sign Up", "" %></li>
-        <li><%= link_to "Sign In", "" %></li> 
+      <% if session["user_id"].present? %>
+        <% current_user = User.find_by(id: session["user_id"]) %>
+        <li>Hello, <%= link_to current_user.name, user_path(current_user) %>!</li>
+        <li><%= link_to image_tag("shopping_cart2.png"), carts_path %></li>
+        <li><%= link_to "Sign Out", logout_path %></li>
+      <% else %>
+        <li><%= link_to "Sign Up", new_user_path %></li>
+        <li><%= link_to "Sign In", login_path %></li>
+      <% end %>
     </ul>
 
   </nav>
 
 
+
   <div>
+
+    <% if flash["notice"].present? %>
+    <p><%= flash["notice"] %></p>
+    <% end %>
 
     <%= yield %>
 

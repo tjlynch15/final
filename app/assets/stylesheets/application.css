@@ -26,11 +26,11 @@ body {
   background-size: cover;    
 }
 
-
 input, select, textarea {
   margin-top: 8px;
 }
 .container {
+  color: white;
   margin: 10px auto;
   padding: 10px;
 }
@@ -48,6 +48,11 @@ nav a {
   text-decoration: none;
   border: none;
   color: white;
+}
+nav a:hover {
+  text-decoration: none;
+  /*color: red;*/
+  border-bottom: solid 1px white;
 }
 nav ul {
   padding: 8px;
@@ -75,13 +80,13 @@ h2 {
 
 a {
   text-decoration: none;
-  border-bottom: dotted 1px white;
-  color: white;
+  border-bottom: dotted 1px #000;
+  color: #000;
 }
 a:hover {
   text-decoration: none;
   /*color: red;*/
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px #000;
 }
 
 li {

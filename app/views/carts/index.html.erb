@@ -1,0 +1,37 @@
+<div class=details>
+
+<h2>My Cart</h2>
+<%#= link_to "Empty Cart", cart_url(@cart.id), :method => :delete %>
+
+<br><br>
+
+<% total = 0 %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Quantity</th>
+  </tr>
+
+
+<% @cart.each do |id, quantity| %>
+
+  <% product = Product.find_by_id(id) %>
+
+  <tr>
+  	<td><%= link_to product.name, "/products/#{product.id}" %></td>
+  	<td><%= product.description %></td> 
+  	<td><%= number_to_currency(product.price) %></td> 
+  	<td><%= quantity %></td> 	
+  </tr>	
+  <% total = total += quantity * product.price %>
+
+<% end %>
+
+</table>
+
+<p><b>Total: <%= number_to_currency(total) %></b></p>
+
+</div>

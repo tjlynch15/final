@@ -24,8 +24,9 @@ Product
   image_url: string
   category_id: integer
 
-ShoppingCart
+Cart
   user_id: integer
+
 
 ContainsProduct
   product_id: integer
@@ -45,8 +46,8 @@ OrdersItem
 User
   name: text
   email: text
-  password: text
   address: text
+  password_digest: text
   
 CreditCard
   card_number: string

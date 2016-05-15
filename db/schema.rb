@@ -13,6 +13,12 @@
 
 ActiveRecord::Schema.define(version: 0) do
 
+  create_table "carts", force: :cascade do |t|
+    t.integer "user_id"
+  end
+
+  add_index "carts", ["user_id"], name: "index_carts_on_user_id"
+
   create_table "categories", force: :cascade do |t|
     t.text "name"
   end
@@ -99,12 +105,6 @@ ActiveRecord::Schema.define(version: 0) do
   add_index "reviews", ["product_id"], name: "index_reviews_on_product_id"
   add_index "reviews", ["user_id"], name: "index_reviews_on_user_id"
 
-  create_table "shopping_carts", force: :cascade do |t|
-    t.integer "user_id"
-  end
-
-  add_index "shopping_carts", ["user_id"], name: "index_shopping_carts_on_user_id"
-
   create_table "tickets", force: :cascade do |t|
     t.string  "date"
     t.integer "price"
@@ -119,8 +119,8 @@ ActiveRecord::Schema.define(version: 0) do
   create_table "users", force: :cascade do |t|
     t.text "name"
     t.text "email"
-    t.text "password"
     t.text "address"
+    t.text "password_digest"
   end
 
 end

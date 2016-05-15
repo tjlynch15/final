@@ -12,13 +12,10 @@
 <!-- <div class="details"> -->
 
   <p><%= image_tag @product.image_url, class: 'pull-left' %></p>
-  <p><%= link_to "Add to Cart", product_path(@product.id), class: 'pull-right' %></p>
-  <p><%= link_to image_tag("shopping_cart.png"), product_path(@product.id), class: 'pull-right' %></p>
-  
+  <p><%= link_to "Add to Cart", cart_path, :method => :patch, class: 'pull-right' %></p>
 
   <p><strong>Price:</strong> <%= number_to_currency(@product.price/100) %></p>
   <p><strong>Description:</strong> <%= @product.description %></p>
-
 
 
   <h3>Add a Review</h3>
