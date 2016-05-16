@@ -1,0 +1,22 @@
+<h1>
+  <%= @player.name %>
+  <small>
+    <%= link_to "Edit This Player", edit_player_path(@player.id) %>
+    <%= link_to "Delete This Player", player_path(@player.id), :method => :delete %>
+  </small>
+</h1>
+
+<div class="details">
+
+  <p><%= image_tag @player.image_url, class: 'pull-left' %></p>
+
+  <p><strong>Number</strong> <%= @player.number %></p>
+  <p><strong>Position</strong> <%= @player.position %></p>
+  <p><strong>Height</strong> <%= @player.height %></p>
+  <p><strong>Weight</strong> <%= @player.weight %></p>
+  <p><strong>Age</strong> <%= @player.age %></p>
+  <p><strong>Acquired</strong> <%= @player.acquired %></p>
+  <p><strong>Drafted</strong> <%= @player.drafted %></p>
+
+
+</div>

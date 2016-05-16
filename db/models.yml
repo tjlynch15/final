@@ -6,13 +6,16 @@ Player
   weight: integer
   age: integer
   birthplace: text
-
-Profile
-  name: text
   image_url: text
-  aquired: text
+  acquired: text
   drafted: text
-  player_id: integer
+
+# Profile
+#   name: text
+#   image_url: text
+#   aquired: text
+#   drafted: text
+#   player_id: integer
 
 Category
   name: text
@@ -29,7 +32,7 @@ Cart
 
 ContainsProduct
   product_id: integer
-  shopping_cart_id: integer
+  cart_id: integer
 
 Order
   date: string  

@@ -21,6 +21,7 @@ class UsersController < ApplicationController
     user.email = params[:user][:email]
     user.password = params[:user][:password]
     user.save
+    
     redirect_to categories_url
   end
 

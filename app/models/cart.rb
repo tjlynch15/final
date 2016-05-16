@@ -1,5 +1,5 @@
 class Cart < ActiveRecord::Base
 
-  has_many :containsproducts  #, foreign_key: :shopping_cart_id, class_name: 'ContainsProduct'
-  has_many :products, :through => :containsproducts
+  has_many :contains_products  #, foreign_key: :cart_id, class_name: 'ContainsProduct'
+  has_many :products, :through => :contains_products
 end

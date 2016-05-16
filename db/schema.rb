@@ -25,11 +25,11 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "contains_products", force: :cascade do |t|
     t.integer "product_id"
-    t.integer "shopping_cart_id"
+    t.integer "cart_id"
   end
 
+  add_index "contains_products", ["cart_id"], name: "index_contains_products_on_cart_id"
   add_index "contains_products", ["product_id"], name: "index_contains_products_on_product_id"
-  add_index "contains_products", ["shopping_cart_id"], name: "index_contains_products_on_shopping_cart_id"
 
   create_table "credit_cards", force: :cascade do |t|
     t.string  "card_number"
@@ -73,6 +73,9 @@ ActiveRecord::Schema.define(version: 0) do
     t.integer "weight"
     t.integer "age"
     t.text    "birthplace"
+    t.text    "image_url"
+    t.text    "drafted"
+    t.text    "acquired"
   end
 
   create_table "products", force: :cascade do |t|
@@ -84,16 +87,6 @@ ActiveRecord::Schema.define(version: 0) do
   end
 
   add_index "products", ["category_id"], name: "index_products_on_category_id"
-
-  create_table "profiles", force: :cascade do |t|
-    t.text    "name"
-    t.text    "aquired"
-    t.text    "drafted"
-    t.integer "player_id"
-    t.text    "image_url"
-  end
-
-  add_index "profiles", ["player_id"], name: "index_profiles_on_player_id"
 
   create_table "reviews", force: :cascade do |t|
     t.integer "rating"
