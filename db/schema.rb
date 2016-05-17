@@ -90,13 +90,11 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "reviews", force: :cascade do |t|
     t.integer "rating"
-    t.text    "description"
     t.integer "product_id"
-    t.integer "user_id"
+    t.text    "body"
   end
 
   add_index "reviews", ["product_id"], name: "index_reviews_on_product_id"
-  add_index "reviews", ["user_id"], name: "index_reviews_on_user_id"
 
   create_table "tickets", force: :cascade do |t|
     t.string  "date"

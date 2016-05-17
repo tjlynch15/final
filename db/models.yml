@@ -58,9 +58,9 @@ CreditCard
 
 Review
   rating: integer
-  description: text
+  body: text
   product_id: integer
-  user_id: integer
+  # user_id: integer
 
 Game
   date: string

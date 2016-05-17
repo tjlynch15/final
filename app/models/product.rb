@@ -5,4 +5,7 @@ class Product < ActiveRecord::Base
   has_many :contains_products  #, foreign_key: :shopping_cart_id, class_name: 'ContainsProduct'
   has_many :carts, :through => :contains_products
 
+  # reviews = Review.where(product_id: @product.id)
+  has_many :reviews 
+
 end

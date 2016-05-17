@@ -18,11 +18,11 @@
   <p><strong>Description:</strong> <%= @product.description %></p>
 
 
-  <h3>Add a Review</h3>
+  <h4>Add a Review</h4>
 
   <%= form_tag "/reviews", :method => :post do %>
     
-    <!-- <input type="hidden" name="movie_id" value="<%= @product.id %>"> -->
+    <!-- <input type="hidden" name="movie_id" value="<%#= @product.id %>"> -->
     <%= hidden_field_tag :product_id, @product.id %>
     
     <br>
@@ -31,7 +31,24 @@
     <%= submit_tag "Add Review" %>
   <% end %>
 
-  <br>
+
+  <div class=reviews>
+
   <h3>Reviews</h3>
 
+  <ul>
+    <% @product.reviews.each do |review| %>
+
+      <li><%= review.body %></li>
+
+    <% end %>
+  </ul>
+
   </div>
+
+  </div>
+
+
+
+
+
