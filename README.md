@@ -38,7 +38,9 @@ Final Project
 	name, number, age, height, weight, and birthplace.
 
 * The user will be able to access the player profile by clicking on a player name. The profile will
-	consist of the player's name, picture, date acquired, and date drafted.
+	consist of the player's name, picture, date acquired, and date drafted, etc.  If the user is an admin,
+	the edit and delete links will be displayed, otherwise they will not. An admin user is in the seed file
+	(name: tjl, email: tlynch@example.org, passwoerd: comet)
 
 * The e-commerce functionality of the website will allow the user to view products by category type.
 

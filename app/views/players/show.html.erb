@@ -1,22 +1,32 @@
 <h1>
   <%= @player.name %>
+
+<% if session["user_id"].present? %>
+  <% current_user = User.find_by(id: session["user_id"]) %>
+  <% if current_user.admin %>
   <small>
     <%= link_to "Edit This Player", edit_player_path(@player.id) %>
     <%= link_to "Delete This Player", player_path(@player.id), :method => :delete %>
   </small>
+   <% end %>
+ <% end %>
+
 </h1>
 
-<div class="details">
+<div class="player_details">
 
   <p><%= image_tag @player.image_url, class: 'pull-left' %></p>
 
-  <p><strong>Number</strong> <%= @player.number %></p>
-  <p><strong>Position</strong> <%= @player.position %></p>
-  <p><strong>Height</strong> <%= @player.height %></p>
-  <p><strong>Weight</strong> <%= @player.weight %></p>
-  <p><strong>Age</strong> <%= @player.age %></p>
-  <p><strong>Acquired</strong> <%= @player.acquired %></p>
-  <p><strong>Drafted</strong> <%= @player.drafted %></p>
-
+  <div class="player_stats">
+    <p><strong>Number</strong> <%= @player.number %></p>
+    <p><strong>Position</strong> <%= @player.position %></p>
+    <p><strong>Height</strong> <%= @player.height %></p>
+    <p><strong>Weight</strong> <%= @player.weight %></p>
+    <p><strong>Age</strong> <%= @player.age %></p>
+    <p><strong>Birthplace</strong> <%= @player.birthplace %></p>
+    <p><strong>Acquired</strong> <%= @player.acquired %></p>
+    <p><strong>Drafted</strong> <%= @player.drafted %></p>
+    <p><strong>Round</strong> <%= @player.round %></p>
+  </div>
 
 </div>

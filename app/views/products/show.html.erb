@@ -3,10 +3,16 @@
 
 <h2>
   <%= @product.name %>
-  <small>
-    <%= link_to "Edit This Product", edit_product_path(@product.id) %>
-    <%= link_to "Delete This Product", product_path(@product.id), :method => :delete %>
-  </small>
+
+  <% if session["user_id"].present? %>
+    <% current_user = User.find_by(id: session["user_id"]) %>
+   <% if current_user.admin %>
+      <small>
+        <%= link_to "Edit This Product", edit_product_path(@product.id) %>
+        <%= link_to "Delete This Product", product_path(@product.id), :method => :delete %>
+      </small>
+    <% end %>
+ <% end %>
 </h2>
 
 <!-- <div class="details"> -->
@@ -14,14 +20,22 @@
   <p><%= image_tag @product.image_url, class: 'pull-left' %></p>
   <p><%= link_to "Add to Cart", cart_path, :method => :patch, class: 'pull-right' %></p>
 
-  <p><strong>Price:</strong> <%= number_to_currency(@product.price/100) %></p>
+  <p><strong>Price:</strong> <%= number_to_currency @product.price/100.00 %></p>
   <p><strong>Description:</strong> <%= @product.description %></p>
 
 
   <h4>Add a Review</h4>
 
   <%= form_tag "/reviews", :method => :post do %>
-    
+
+    <select name="rating">
+    <option>5 star</option>
+    <option>4 star</option>
+    <option>3 star</option>
+    <option>2 star</option>
+    <option>1 star</option>
+    </select>
+  
     <!-- <input type="hidden" name="movie_id" value="<%#= @product.id %>"> -->
     <%= hidden_field_tag :product_id, @product.id %>
     
@@ -39,7 +53,12 @@
   <ul>
     <% @product.reviews.each do |review| %>
 
-      <li><%= review.body %></li>
+    <p>
+      
+      <strong><%= ("&#9733;" * review.rating).html_safe  %></strong>
+      <%= review.body %>
+
+    </p>
 
     <% end %>
   </ul>

@@ -29,11 +29,13 @@ body {
 input, select, textarea {
   margin-top: 8px;
 }
+
 .container {
   color: white;
   margin: 10px auto;
   padding: 10px;
 }
+
 
 nav {
   background: #000;
@@ -67,6 +69,8 @@ nav li {
   padding-right: 20px;
 }
 
+
+
 h1 {
   border-bottom: solid 2px #AAA;
   padding-bottom: 12px;
@@ -85,7 +89,6 @@ h3 {
   color: white;
 }
 
-
 a {
   text-decoration: none;
   border-bottom: dotted 1px #000;
@@ -93,7 +96,6 @@ a {
 }
 a:hover {
   text-decoration: none;
-  /*color: red;*/
   border-bottom: solid 1px #000;
 }
 
@@ -103,7 +105,7 @@ li {
   list-style-type: none;
 }
 
-.movie-box {
+.product-box {
   float: left;
   width: 245px;
   height: 400px;
@@ -111,12 +113,11 @@ li {
   padding-left: 0px;
   text-align: center;
 }
-.movie-box h3 a {
+.product-box h3 a {
   color: white;
   background-color: darkred;
 }
-
-.movie-box img {
+.product-box img {
   text-align: center;
   margin: auto auto;
   display: block;
@@ -133,8 +134,13 @@ input, textarea {
 h1 small a {
   font-size: 14px;
   font-weight: normal;
-  color: #999;
+  color: white;
   margin-left: 12px;
+  border-bottom: dotted 1px white; 
+}
+h1 small a:hover {
+  text-decoration: none;
+  border-bottom: solid 1px white;
 }
 
 h2 small a {
@@ -200,21 +206,58 @@ table td {
 }
 
 
-.movie-selections {
-  width: 70%;
-}
-aside {
-  float: right;
-  text-align: center;
-  background-color: #DDD;
-}
-aside .movie-box {
-  margin: 20px auto;
-  padding: 0;
-}
-
-nav form input {
+/*nav form input {
   border-radius: 6px;
   margin: 0;
   width: 400px;
+}*/
+
+
+.container2 {
+  width: 80%;
+  margin: auto;
+  padding: 0px 60px 10px 60px;
+  background-color: lightgray;
 }
+
+
+.form_button {
+  background-color: #3366FF;
+}
+
+.players_page {
+  text-align: center;
+  color: white;
+}
+
+.players_page a {
+  color: white;
+  border-bottom: dotted 1px white;
+}
+.players_page a:hover {
+  text-decoration: none;
+  border-bottom: solid 1px white;
+}
+.players_page h3 {
+  color: white;
+}
+
+
+.player_details {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+}
+
+.player_stats {
+  margin: auto;
+  padding: 10px 0px 10px 180px;
+}
+
+
+
+
+
+
+
+

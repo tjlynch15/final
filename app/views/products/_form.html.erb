@@ -1,0 +1,35 @@
+<%= @product.errors.full_messages %>
+
+<%= form_for @product do |form| %>
+
+  <p><%= form.label :name %>
+  <br>
+  <%= form.text_field :name, size: 80, autofocus: true, required: true %></p>
+
+  <p><%= form.label :price %>
+  <br>
+  <%= form.text_field :price %></p>
+  
+  <p><%= form.label :description %>
+  <br>
+  <%= form.text_field :description, size: 80 %></p>
+
+  <%= form.label :image_url,  "Link to product URL" %>
+  <br>
+  <%= form.text_field :image_url %>
+
+  <p><%= form.label :category_id %>
+  <br>
+  <%= form.text_field :category_id %></p>
+  <br>
+  <br>
+  
+
+  <%= form.submit :class => 'form_button' %>
+
+<% end %>
+
+
+
+
+

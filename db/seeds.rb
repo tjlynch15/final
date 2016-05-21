@@ -14,9 +14,10 @@ anisimov.height = "6\' 4\""
 anisimov.weight = 198
 anisimov.age = 27
 anisimov.birthplace = "Yaroslavl, RUS"
-anisimov.image_url = "anisimov.jpeg"
+anisimov.image_url = "anisimov.jpg"
 anisimov.acquired = " FROM CBJ W/ M. DANO, C. TROPP, J. MORIN AND A 2016 4TH ROUND PICK FOR B. SAAD, A. BROADHURST AND M. PALIOTTA ON 6/30/15."
 anisimov.drafted = "NYR / 2006 NHL ENTRY DRAFT"
+anisimov.round = "2ND (54TH OVERALL)"
 anisimov.save
 
 desjardins = Player.new
@@ -27,6 +28,10 @@ desjardins.height = "6\' 1\""
 desjardins.weight = 195
 desjardins.age = 29
 desjardins.birthplace = "Lively, ON, CAN"
+desjardins.image_url = "desjardins.jpeg"
+desjardins.acquired = "From SJS for Ben Smith and a conditional 2017"
+desjardins.drafted = "7th round pick on 3/2/15"
+desjardins.round = 
 desjardins.save
 
 fleischmann = Player.new
@@ -37,6 +42,10 @@ fleischmann.height = "6\' 1\""
 fleischmann.weight = 207
 fleischmann.age = 31
 fleischmann.birthplace = "Koprivince, CZE"
+fleischmann.image_url = "fleischmann.jpeg"
+fleischmann.acquired = "From MTL w/ D. Weise for Phillip Danault and a 2018 2nd round pick on 2/26/16"
+fleischmann.drafted = "DET / 2002 NHL Entry Draft"
+fleischmann.round = "2nd (63rd overall)"
 fleischmann.save
 
 hossa = Player.new
@@ -47,6 +56,10 @@ hossa.height = "6\' 1\""
 hossa.weight = 207
 hossa.age = 37
 hossa.birthplace = "Stara Lubovana, SVK"
+hossa.image_url = "hossa.jpeg"
+hossa.acquired = "Signed as a free agent on 7/1/09"
+hossa.drafted = "OTT / 1997 NHL Entry Draft"
+hossa.round = "1st (12th overall)"
 hossa.save
 
 kane = Player.new
@@ -57,6 +70,10 @@ kane.height = "5\' 11\""
 kane.weight = 177
 kane.age = 27
 kane.birthplace = "Buffalo, NY, USA"
+kane.image_url = "kane.jpeg"
+kane.acquired = 
+kane.drafted = "CHI / 2007 NHL Entry Draft"
+kane.round = "1st (1st overall)"
 kane.save
 
 kruger = Player.new	
@@ -67,6 +84,10 @@ kruger.height="6\' 0\""
 kruger.weight=186
 kruger.age=25
 kruger.birthplace="Stockholm, SWE"
+kruger.image_url = "kruger.jpeg"
+kruger.acquired = 
+kruger.drafted = "CHI / 2009 NHL Entry Draft"
+kruger.round = "5th (149th overall)"
 kruger.save	
 
 ladd=Player.new	
@@ -77,6 +98,10 @@ ladd.height="6\' 3\""
 ladd.weight=200
 ladd.age=30
 ladd.birthplace="Maple Ridge, BC CAN"
+ladd.image_url = "ladd.jpeg"
+ladd.acquired = "From WPG w/ J. Harrison and M. Fraser for M. Dano, 2016 1st round pick and 2018 conditional 3rd round pick on 02/25/16"
+ladd.drafted = "CAR / 2004 NHL Entry Draft"
+ladd.round = "1st (4th overall)"
 ladd.save	
 			
 mashinter=Player.new	
@@ -87,6 +112,10 @@ mashinter.height="6\' 4\""
 mashinter.weight=212
 mashinter.age=27
 mashinter.birthplace="Bradford, ON, CAN"
+mashinter.image_url = "mashinter.jpeg"
+mashinter.acquired = "From NYR for K. Beach on 12/6/13"
+mashinter.drafted = 
+mashinter.round = 
 mashinter.save	
 			
 panarin=Player.new	
@@ -97,6 +126,10 @@ panarin.height= "5\' 11\""
 panarin.weight=170
 panarin.age=24
 panarin.birthplace="Korkino, RUS"
+panarin.image_url = "panarin.jpeg"
+panarin.acquired = "Signed as a free agent on 5/1/15"
+panarin.drafted = 
+panarin.round = 
 panarin.save	
 			
 panik = Player.new	
@@ -107,6 +140,10 @@ panik.height= "6\' 1\""
 panik.weight = 208
 panik.age = 25
 panik.birthplace = "Martin, SVK"
+panik.image_url = "panik.jpeg"
+panik.acquired =
+panik.drafted = "TBL / 2009 NHL Entry Draft"
+panik.round = "2nd (52nd overall)"
 panik.save	
 			
 shaw=Player.new	
@@ -117,6 +154,10 @@ shaw.height= "5\' 11\""
 shaw.weight=179
 shaw.age=24
 shaw.birthplace="Belleville, ON, CAN"
+shaw.image_url = "shaw.jpeg"
+shaw.acquired = 
+shaw.drafted = "CHI / 2011 NHL Entry Draft"
+shaw.round = "5th (139th overall)"
 shaw.save	
 			
 teravainen=Player.new	
@@ -127,6 +168,10 @@ teravainen.height= "5\' 11\""
 teravainen.weight=178
 teravainen.age=21
 teravainen.birthplace="Helsinki, FIN"
+teravainen.image_url = "teravainen.jpeg"
+teravainen.acquired = 
+teravainen.drafted = "CHI / 2012 NHL Entry Draft"
+teravainen.round = "1st (18th overall)"
 teravainen.save	
 			
 toews=Player.new	
@@ -137,6 +182,10 @@ toews.height="6\' 2\""
 toews.weight=201
 toews.age=28
 toews.birthplace = "Winnipeg, MB, CAN"
+toews.image_url = "toews.jpeg"
+toews.acquired = 
+toews.drafted = "CHI / 2006 NHL Entry Draft"
+toews.round = "1st (3rd overall)"
 toews.save	
 			
 weise=Player.new	
@@ -147,6 +196,10 @@ weise.height= "6\' 2\""
 weise.weight=206
 weise.age=27
 weise.birthplace="Winnipeg, MB, CAN"
+weise.image_url = "weise.jpeg"
+weise.acquired = "From MTL w/ T. Fleischmann for Phillip Danault and a 2018 2nd round pick on 2/26/16"
+weise.drafted = "NYR / 2008 NHL Entry Draft"
+weise.round = "4th (111th overall)"
 weise.save	
 			
 ehrhoff=Player.new	
@@ -157,6 +210,10 @@ ehrhoff.height= "6\' 2\""
 ehrhoff.weight=201
 ehrhoff.age=33
 ehrhoff.birthplace="Moers, DEU"
+ehrhoff.image_url = "ehrhoff.jpeg"
+ehrhoff.acquired = "From LAK for Rob Scuderi on 2/26/16"
+ehrhoff.drafted = "SJS / 2001 NHL Entry Draft"
+ehrhoff.round = "4th (106th overall)"
 ehrhoff.save	
 			
 gustafsson=Player.new	
@@ -167,6 +224,10 @@ gustafsson.height= "6\' 2\""
 gustafsson.weight=176
 gustafsson.age=24
 gustafsson.birthplace="Nynashamn, SWE"
+gustafsson.image_url = "gustafsson.jpeg"
+gustafsson.acquired = "Signed as a free agent on 4/30/15"
+gustafsson.drafted = "EDM / 2012 NHL Entry Draft"
+gustafsson.round = "4th (93rd overall)"
 gustafsson.save	
 			
 hjalmarsson=Player.new	
@@ -177,6 +238,10 @@ hjalmarsson.height= "6\' 3\""
 hjalmarsson.weight=197
 hjalmarsson.age=28
 hjalmarsson.birthplace="Eksjo, SWE"
+hjalmarsson.image_url = "hjalmarsson.jpeg"
+hjalmarsson.acquired =
+hjalmarsson.drafted = "CHI / 2005 NHL Entry Draft"
+hjalmarsson.round = "4th (108th overall)"
 hjalmarsson.save	
 			
 keith=Player.new	
@@ -187,6 +252,10 @@ keith.height = "6\' 1\""
 keith.weight = 192
 keith.age = 32
 keith.birthplace = "Winnipeg, MB, CAN"
+keith.image_url = "keith.jpeg"
+keith.acquired = 
+keith.drafted = "CHI / 2002 NHL Entry Draft"
+keith.round = "2nd (54th overall)"
 keith.save	
 			
 rozsival=Player.new	
@@ -197,6 +266,10 @@ rozsival.height="6\' 1\""
 rozsival.weight=210
 rozsival.age=37
 rozsival.birthplace="Vlasim, CZE"
+rozsival.image_url = "rozsival.jpeg"
+rozsival.acquired = "Signed as a free agent on 9/11/12"
+rozsival.drafted = "PIT / 1996 NHL Entry Draft"
+rozsival.round = "4th (105th overall)"
 rozsival.save	
 			
 rundblad=Player.new	
@@ -207,6 +280,10 @@ rundblad.height= "6\' 2\""
 rundblad.weight=187
 rundblad.age=25
 rundblad.birthplace="Lycksele, SWE"
+rundblad.image_url = "rundblad.jpeg"
+rundblad.acquired = "From PHX with M. Brisebois for a 2014 2nd round pick on 3/4/14"
+rundblad.drafted = "STL / 2009 NHL Entry Draft"
+rundblad.round = "1st (17th overall)"
 rundblad.save	
 		
 seabrook=Player.new	
@@ -217,6 +294,10 @@ seabrook.height= "6\' 3\""
 seabrook.weight	=220
 seabrook.age=31
 seabrook.birthplace="Richmond, BC, CAN"
+seabrook.image_url = "seabrook.jpeg"
+seabrook.acquired = 
+seabrook.drafted = "CHI / 2003 NHL Entry Draft"
+seabrook.round = "1st (14th overall)"
 seabrook.save	
 			
 svedberg=Player.new	
@@ -227,6 +308,10 @@ svedberg.height= "6\' 8\""
 svedberg.weight=238
 svedberg.age=24
 svedberg.birthplace="Gothenburg, SWE"
+svedberg.image_url = "svedberg.jpeg"
+svedberg.acquired = "Signed as a free agent on October 19, 2013"
+svedberg.drafted = 
+svedberg.round = 
 svedberg.save	
 			
 riemsdyk=Player.new	
@@ -237,6 +322,10 @@ riemsdyk.height= "6\' 2\""
 riemsdyk.weight=188
 riemsdyk.age=24
 riemsdyk.birthplace="Middletown, NJ"
+riemsdyk.image_url = "riemsdyk.jpeg"
+riemsdyk.acquired = "Signed as a free agent on 3/24/14"
+riemsdyk.drafted = 
+riemsdyk.round = 
 riemsdyk.save	
 		
 crawford=Player.new	
@@ -247,6 +336,10 @@ crawford.height= "6\' 2\""
 crawford.weight=216
 crawford.age=31
 crawford.birthplace="Montreal, QC, CAN"
+crawford.image_url = "crawford.jpeg"
+crawford.acquired = 
+crawford.drafted = "CHI / 2003 NHL Entry Draft"
+crawford.round = "2nd (52nd overall)"
 crawford.save	
 		
 darling=Player.new	
@@ -257,6 +350,10 @@ darling.height= "6\' 6\""
 darling.weight=232
 darling.age=31
 darling.birthplace="Montreal, QC, CAN"
+darling.image_url = "darling.jpeg"
+darling.acquired = "Signed as a free agent on 7/1/14"
+darling.drafted = "PHX / 2007 NHL Entry Draft"
+darling.round = "6th (153rd overall)"
 darling.save	
 		
 leighton=Player.new	
@@ -267,9 +364,11 @@ leighton.height= "6\' 3\""
 leighton.weight=186
 leighton.age=34
 leighton.birthplace="Petrolia, ON, CAN"
+leighton.image_url = "leighton.jpeg"
+leighton.acquired = 
+leighton.drafted = "CHI / 1999 NHL Entry Draft"
+leighton.round = "6th (165th overall)"
 leighton.save	
-
-
 
 
 
@@ -347,12 +446,20 @@ collectible3.image_url = "collectible3.jpeg"
 collectible3.category_id = collectibles.id
 collectible3.save
 
+user1 = User.new
+user1.name = "tjl"
+user1.email = "tlynch@example.org"
+user1.password = "comet"
+user1.password_confirmation = "comet"
+user1.admin = true
+user1.save
 
 
 
 print "There are now #{Category.count} categories in the database.\n"
 print "There are now #{Product.count} products in the database.\n"
 print "There are now #{Player.count} players in the database.\n"
+print "There are now #{User.count} userss in the database.\n"
 
 
 

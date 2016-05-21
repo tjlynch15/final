@@ -1,4 +1,18 @@
 
+<div class="players_page">
+
+<% if session["user_id"].present? %>
+  <% current_user = User.find_by(id: session["user_id"]) %>
+  <% if current_user.admin %>
+    <h3>
+    <%= link_to "Add Player", new_player_path %>
+    </h3>
+   <% end %>
+ <% end %>
+
+ </div>
+
+
 
 <table>
   <tr>

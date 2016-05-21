@@ -9,13 +9,7 @@ Player
   image_url: text
   acquired: text
   drafted: text
-
-# Profile
-#   name: text
-#   image_url: text
-#   aquired: text
-#   drafted: text
-#   player_id: integer
+  round: text
 
 Category
   name: text
@@ -50,6 +44,7 @@ User
   email: text
   address: text
   password_digest: text
+  admin: boolean(false)
   
 CreditCard
   card_number: string

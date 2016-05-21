@@ -28,7 +28,8 @@ class CartsController < ApplicationController
         cart = Cart.find_by(user_id: session["user_id"])
         ContainsProduct.create(cart_id: cart.id, product_id: params[:id])
     else
-        redirect_to categories_url
+        redirect_to categories_url, notice: "Must be signed in to Add to Cart"
+        return
     end
 
     redirect_to carts_url

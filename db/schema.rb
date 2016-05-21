@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(version: 0) do
     t.text    "image_url"
     t.text    "drafted"
     t.text    "acquired"
+    t.text    "round"
   end
 
   create_table "products", force: :cascade do |t|
@@ -90,8 +91,8 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "reviews", force: :cascade do |t|
     t.integer "rating"
-    t.integer "product_id"
     t.text    "body"
+    t.integer "product_id"
   end
 
   add_index "reviews", ["product_id"], name: "index_reviews_on_product_id"
@@ -108,10 +109,11 @@ ActiveRecord::Schema.define(version: 0) do
   add_index "tickets", ["shopping_cart_id"], name: "index_tickets_on_shopping_cart_id"
 
   create_table "users", force: :cascade do |t|
-    t.text "name"
-    t.text "email"
-    t.text "address"
-    t.text "password_digest"
+    t.text    "name"
+    t.text    "email"
+    t.text    "address"
+    t.text    "password_digest"
+    t.boolean "admin",           default: false
   end
 
 end
