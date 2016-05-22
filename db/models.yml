@@ -46,6 +46,11 @@ User
   password_digest: text
   admin: boolean(false)
   
+  activation_digest: string
+  activated: boolean(false)
+  activated_at: datetime
+
+  
 CreditCard
   card_number: string
   expiration: string

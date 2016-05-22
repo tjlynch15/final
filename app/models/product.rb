@@ -6,6 +6,6 @@ class Product < ActiveRecord::Base
   has_many :carts, :through => :contains_products
 
   # reviews = Review.where(product_id: @product.id)
-  has_many :reviews 
+  has_many :reviews, :dependent => :nullify 
 
 end

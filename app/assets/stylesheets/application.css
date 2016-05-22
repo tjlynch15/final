@@ -174,7 +174,9 @@ h2 small a {
 
 .reviews {
   width: 80%;
-  margin: 0px 0px 0px 100px;
+  margin: auto;
+  /*margin: 0px 0px 0px 100px;*/
+  padding: 10px 0px 10px 200px;
 }
 .reviews h3 {
   color: #000;

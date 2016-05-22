@@ -15,8 +15,6 @@
  <% end %>
 </h2>
 
-<!-- <div class="details"> -->
-
   <p><%= image_tag @product.image_url, class: 'pull-left' %></p>
   <p><%= link_to "Add to Cart", cart_path, :method => :patch, class: 'pull-right' %></p>
 
@@ -53,11 +51,9 @@
   <ul>
     <% @product.reviews.each do |review| %>
 
-    <p>
-      
+    <p>    
       <strong><%= ("&#9733;" * review.rating).html_safe  %></strong>
       <%= review.body %>
-
     </p>
 
     <% end %>

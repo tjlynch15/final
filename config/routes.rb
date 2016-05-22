@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 
   resources :carts, only: [:index, :update, :destroy]
   
+  resources :account_activations, only: [:edit]
   
 
   # The priority is based upon order of creation: first created -> highest priority.

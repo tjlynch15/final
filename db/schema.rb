@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160522042510) do
 
   create_table "carts", force: :cascade do |t|
     t.integer "user_id"
@@ -109,11 +109,14 @@ ActiveRecord::Schema.define(version: 0) do
   add_index "tickets", ["shopping_cart_id"], name: "index_tickets_on_shopping_cart_id"
 
   create_table "users", force: :cascade do |t|
-    t.text    "name"
-    t.text    "email"
-    t.text    "address"
-    t.text    "password_digest"
-    t.boolean "admin",           default: false
+    t.text     "name"
+    t.text     "email"
+    t.text     "address"
+    t.text     "password_digest"
+    t.boolean  "admin",             default: false
+    t.string   "activation_digest"
+    t.boolean  "activated",         default: false
+    t.datetime "activated_at"
   end
 
 end

@@ -452,6 +452,9 @@ user1.email = "tlynch@example.org"
 user1.password = "comet"
 user1.password_confirmation = "comet"
 user1.admin = true
+
+user1.activated = true
+user1.activated_at = Time.zone.now 
 user1.save
 
 
