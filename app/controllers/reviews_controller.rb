@@ -1,12 +1,12 @@
 class ReviewsController < ApplicationController
 
   def create
-  	
-  	review = Review.new
+    
+    review = Review.new
     review.rating = params[:rating]
     review.body = params[:body]
-	review.product_id = params[:product_id]
-	# review.user_id = params[:user_id]
+    review.product_id = params[:product_id]
+    # review.user_id = params[:user_id]
     review.save
     
     redirect_to product_url(params[:product_id])
