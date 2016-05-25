@@ -176,7 +176,7 @@ h2 small a {
   width: 80%;
   margin: auto;
   /*margin: 0px 0px 0px 100px;*/
-  padding: 10px 0px 10px 200px;
+  padding: 0px 0px 10px 300px;
 }
 .reviews h3 {
   color: #000;
@@ -224,7 +224,15 @@ table td {
 
 
 .form_button {
-  background-color: #3366FF;
+  /*background-color: white;*/
+  background-color: #3366CC;
+  border-radius: 8px;
+}
+.form_button:hover {
+    background-color: #3333CC;
+    /*background-color: #4CAF50;*/
+    /*color: white;*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .players_page {

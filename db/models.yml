@@ -46,9 +46,8 @@ User
   password_digest: text
   admin: boolean(false)
   
-  activation_digest: string
-  activated: boolean(false)
-  activated_at: datetime
+  reset_digest: string
+  reset_sent_at: datetime
 
   
 CreditCard
@@ -64,8 +63,9 @@ Review
 
 Game
   date: string
-  location: text
-  opponent: text
+  visitor: text
+  home: text
+  time: string
 
 Ticket
   date: string

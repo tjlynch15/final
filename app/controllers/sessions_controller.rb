@@ -24,9 +24,8 @@ class SessionsController < ApplicationController
         redirect_to categories_url
         return
 
-        
       else
-             
+                  
       end
     else
      

@@ -22,6 +22,8 @@
   <p><strong>Description:</strong> <%= @product.description %></p>
 
 
+<div class=reviews>
+
   <h4>Add a Review</h4>
 
   <%= form_tag "/reviews", :method => :post do %>
@@ -44,7 +46,7 @@
   <% end %>
 
 
-  <div class=reviews>
+  <!-- <div class=reviews> -->
 
   <h3>Reviews</h3>
 

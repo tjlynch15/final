@@ -18,9 +18,14 @@
   <br>
   <%= form.text_field :image_url %>
 
-  <p><%= form.label :category_id %>
+
+  <p><%= form.label :category_id, "Category" %>
   <br>
-  <%= form.text_field :category_id %></p>
+  <%= form.collection_select :category_id, Category.all.order('name'), :id, :name %></p>
+
+  <!-- <p><%#= form.label :category_id %>
+  <br>
+  <%#= form.text_field :category_id %></p> -->
   <br>
   <br>
   

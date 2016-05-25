@@ -1,6 +1,10 @@
 Category.delete_all
 Player.delete_all
 Product.delete_all
+User.delete_all
+Game.delete_all
+
+
 
 jerseys = Category.create(:name => "Jerseys")
 hats = Category.create(:name => "Hats")
@@ -447,22 +451,35 @@ collectible3.category_id = collectibles.id
 collectible3.save
 
 user1 = User.new
-user1.name = "tjl"
-user1.email = "tlynch@example.org"
-user1.password = "comet"
-user1.password_confirmation = "comet"
+user1.name = "admin"
+user1.email = "admin@example.org"
+user1.password = "nimda"
+user1.password_confirmation = "nimda"
 user1.admin = true
-
-user1.activated = true
-user1.activated_at = Time.zone.now 
 user1.save
+
+
+game1 = Game.new
+game1.date = "WED OCT 7, 2015"
+game1.visitor = "RANGERS"
+game1.home = "BLACKHAWKS"
+game1.time = "7:00 PM"
+game1.save
+
+game2 = Game.new
+game2.date = "FRI OCT 9, 2015"
+game2.visitor = "BLACKHAWKS"
+game2.home = "ISLANDERS"
+game2.time = "6:30 PM"
+game2.save
 
 
 
 print "There are now #{Category.count} categories in the database.\n"
 print "There are now #{Product.count} products in the database.\n"
 print "There are now #{Player.count} players in the database.\n"
-print "There are now #{User.count} userss in the database.\n"
+print "There are now #{User.count} users in the database.\n"
+print "There are now #{Game.count} games in the database.\n"
 
 
 

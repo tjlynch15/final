@@ -14,20 +14,23 @@ class PlayersController < ApplicationController
   end
 
   def create
-    player = Player.new
-    player.number = params[:player][:number]
-    player.name = params[:player][:name]
-    player.position = params[:player][:position]
-    player.height = params[:player][:height]
-    player.weight = params[:player][:weight]
-    player.age = params[:player][:age]
-    player.birthplace = params[:player][:birthplace]
-    player.image_url = params[:player][:image_url]
-    player.acquired = params[:player][:acquired]
-    player.drafted = params[:player][:drafted]
-    player.round = params[:player][:round]
-    player.save
-    redirect_to players_url
+    @player = Player.new
+    @player.number = params[:player][:number]
+    @player.name = params[:player][:name]
+    @player.position = params[:player][:position]
+    @player.height = params[:player][:height]
+    @player.weight = params[:player][:weight]
+    @player.age = params[:player][:age]
+    @player.birthplace = params[:player][:birthplace]
+    @player.image_url = params[:player][:image_url]
+    @player.acquired = params[:player][:acquired]
+    @player.drafted = params[:player][:drafted]
+    @player.round = params[:player][:round]
+    if @player.save
+      redirect_to players_url, notice: "New player added"
+    else
+      render 'new'
+    end
   end
 
   def edit

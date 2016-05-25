@@ -8,4 +8,8 @@ class Product < ActiveRecord::Base
   # reviews = Review.where(product_id: @product.id)
   has_many :reviews, :dependent => :nullify 
 
+  validates :name,  presence: true
+  validates :price,  presence: true
+  validates :category_id,  presence: true
+
 end

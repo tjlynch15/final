@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    @users = @users.limit(10000)
   end
 
   def new

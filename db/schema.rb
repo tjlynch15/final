@@ -41,8 +41,9 @@ ActiveRecord::Schema.define(version: 20160522042510) do
 
   create_table "games", force: :cascade do |t|
     t.string "date"
-    t.text   "location"
-    t.text   "opponent"
+    t.text   "visitor"
+    t.text   "home"
+    t.string "time"
   end
 
   create_table "order_items", force: :cascade do |t|
@@ -113,10 +114,9 @@ ActiveRecord::Schema.define(version: 20160522042510) do
     t.text     "email"
     t.text     "address"
     t.text     "password_digest"
-    t.boolean  "admin",             default: false
-    t.string   "activation_digest"
-    t.boolean  "activated",         default: false
-    t.datetime "activated_at"
+    t.boolean  "admin",           default: false
+    t.string   "reset_digest"
+    t.datetime "reset_sent_at"
   end
 
 end

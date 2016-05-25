@@ -1,0 +1,24 @@
+
+
+<table>
+
+  <tr>
+    <th>Date</th>
+    <th>Home</th>
+    <th>Visitor</th>
+    <th>Time</th>
+  </tr>
+
+
+<% @games.each do |game| %>
+
+  <tr>
+  	<td><%= game.date %></td> 
+  	<td><%= game.home %></td> 
+  	<td><%= game.visitor %></td> 
+  	<td><%= game.time %></td> 
+  </tr>	
+
+<% end %>
+
+</table>

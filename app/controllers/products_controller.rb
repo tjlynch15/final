@@ -14,14 +14,17 @@ class ProductsController < ApplicationController
   end
 
   def create
-    product = Product.new
-    product.name = params[:product][:name]
-    product.price = params[:product][:price]
-    product.description = params[:product][:description]
-    product.image_url = params[:product][:image_url]
-    product.category_id = params[:product][:category_id]
-    product.save
-    redirect_to category_url(product.category_id)
+    @product = Product.new
+    @product.name = params[:product][:name]
+    @product.price = params[:product][:price]
+    @product.description = params[:product][:description]
+    @product.image_url = params[:product][:image_url]
+    @product.category_id = params[:product][:category_id]
+    if @product.save
+      redirect_to category_url(@product.category_id), notice: "New product added"
+    else
+      render 'new'
+    end   
   end
 
 
