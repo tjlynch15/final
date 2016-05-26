@@ -3,12 +3,13 @@ class User < ActiveRecord::Base
   has_secure_password
 
   attr_accessor :reset_token
+  before_save   :downcase_email
 
 
   # Returns true if a password reset has expired.
   def password_reset_expired?
-    # reset_sent_at < 2.hours.ago
-    false
+    reset_sent_at < 2.hours.ago
+    # false
   end
 
 
@@ -35,5 +36,14 @@ class User < ActiveRecord::Base
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
   end
+
+
+  private
+
+    # Converts email to all lower-case.
+    def downcase_email
+      self.email = email.downcase
+    end
+
 
 end

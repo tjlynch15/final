@@ -188,7 +188,7 @@ select { font-size: 18px; }
 form label { margin-right: 12px;}
 
 table {
-  margin: 0 auto;
+  margin: auto;
   margin-top: 40px;
   text-align: center;
   border-collapse: collapse;
@@ -216,7 +216,7 @@ table td {
 
 
 .container2 {
-  width: 80%;
+  width: 40%;
   margin: auto;
   padding: 0px 60px 10px 60px;
   background-color: lightgray;

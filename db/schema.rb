@@ -98,17 +98,6 @@ ActiveRecord::Schema.define(version: 20160522042510) do
 
   add_index "reviews", ["product_id"], name: "index_reviews_on_product_id"
 
-  create_table "tickets", force: :cascade do |t|
-    t.string  "date"
-    t.integer "price"
-    t.text    "seat_location"
-    t.integer "game_id"
-    t.integer "shopping_cart_id"
-  end
-
-  add_index "tickets", ["game_id"], name: "index_tickets_on_game_id"
-  add_index "tickets", ["shopping_cart_id"], name: "index_tickets_on_shopping_cart_id"
-
   create_table "users", force: :cascade do |t|
     t.text     "name"
     t.text     "email"

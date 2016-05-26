@@ -67,19 +67,6 @@ Game
   home: text
   time: string
 
-Ticket
-  date: string
-  price: integer
-  seat_location: text
-  game_id: integer
-  shopping_cart_id: integer
-
-# ContainsTicket
-#   ticket_id: integer
-#   shopping_cart_id: integer
-
-
-
 
 
 # Example table for a typical Book model.
