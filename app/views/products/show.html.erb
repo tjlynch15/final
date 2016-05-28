@@ -16,7 +16,7 @@
 </h2>
 
   <p><%= image_tag @product.image_url, class: 'pull-left' %></p>
-  <p><%= link_to "Add to Cart", cart_path, :method => :patch, class: 'pull-right' %></p>
+  <p><%= link_to "Add to Cart", cart_path(@product.id), :method => :patch, class: 'pull-right' %></p>
 
   <p><strong>Price:</strong> <%= number_to_currency @product.price/100.00 %></p>
   <p><strong>Description:</strong> <%= @product.description %></p>

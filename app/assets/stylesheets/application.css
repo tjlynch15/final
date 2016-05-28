@@ -222,6 +222,13 @@ table td {
   background-color: lightgray;
 }
 
+.container3 {
+  width: 80%;
+  margin: auto;
+  padding: 0px 60px 10px 60px;
+  background-color: lightgray;
+}
+
 
 .form_button {
   /*background-color: white;*/
@@ -235,20 +242,20 @@ table td {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.players_page {
+.table_page {
   text-align: center;
   color: white;
 }
 
-.players_page a {
+.table_page a {
   color: white;
   border-bottom: dotted 1px white;
 }
-.players_page a:hover {
+.table_page a:hover {
   text-decoration: none;
   border-bottom: solid 1px white;
 }
-.players_page h3 {
+.table_page h3 {
   color: white;
 }
 

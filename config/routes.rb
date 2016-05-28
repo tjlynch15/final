@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 
   resources :carts, only: [:index, :update, :destroy]
   resources :games, only: [:index]
+  resources :orders
   
   resources :password_resets, only: [:new, :create, :edit, :update]
 

@@ -20,6 +20,7 @@ class UsersController < ApplicationController
     user = User.new
     user.name = params[:user][:name]
     user.email = params[:user][:email]
+    user.address = params[:user][:address]
     user.password = params[:user][:password]
     user.save
     

@@ -12,6 +12,8 @@
   <p><%= f.password_field :password, size: 40, required: true %></p>
   <p><%= f.label :password_confirmation %></p>
   <p><%= f.password_field :password_confirmation, size: 40, required: true %></p>
+  <p><%= f.label :address %></p>
+  <p><%= f.text_field :address, size: 40 %></p> 
   <p><%= f.submit "Sign Up", :class => 'form_button' %></p>
 
 <% end %>

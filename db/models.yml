@@ -33,11 +33,12 @@ Order
   total_amount: integer
   user_id: integer
   credit_card_id: integer
-  shopping_cart_id: integer
+  cart_id: integer
+  billing_address: text
 
-OrderItem
-  order_id: integer
-  product_id: integer
+# OrderItem
+#   order_id: integer
+#   product_id: integer
 
 User
   name: text

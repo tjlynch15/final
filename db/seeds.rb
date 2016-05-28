@@ -360,14 +360,14 @@ darling.drafted = "PHX / 2007 NHL Entry Draft"
 darling.round = "6th (153rd overall)"
 darling.save	
 		
-leighton=Player.new	
-leighton.number=49
-leighton.name="Michael Leighton"
-leighton.position="G"
-leighton.height= "6\' 3\""
-leighton.weight=186
-leighton.age=34
-leighton.birthplace="Petrolia, ON, CAN"
+leighton = Player.new	
+leighton.number =49
+leighton.name ="Michael Leighton"
+leighton.position ="G"
+leighton.height = "6\' 3\""
+leighton.weight =186
+leighton.age =34
+leighton.birthplace ="Petrolia, ON, CAN"
 leighton.image_url = "leighton.jpeg"
 leighton.acquired = 
 leighton.drafted = "CHI / 1999 NHL Entry Draft"
@@ -460,18 +460,661 @@ user1.save
 
 
 game1 = Game.new
-game1.date = "WED OCT 7, 2015"
+# game1.date = "WED OCT 7, 2015"
+game1.date = "2015-10-07"
 game1.visitor = "RANGERS"
 game1.home = "BLACKHAWKS"
 game1.time = "7:00 PM"
 game1.save
 
 game2 = Game.new
-game2.date = "FRI OCT 9, 2015"
+# game2.date = "FRI OCT 9, 2015"
+game2.date = "2015-10-09"
 game2.visitor = "BLACKHAWKS"
 game2.home = "ISLANDERS"
 game2.time = "6:30 PM"
 game2.save
+
+game3 = Game.new
+# game3.date = "SAT OCT 10, 2015"
+game3.date = "2015-10-10"
+game3.visitor = "ISLANDERS"
+game3.home = "BLACKHAWKS"
+game3.time = "7:30 PM"
+game3.save
+
+game4 = Game.new
+# game4.date = "WED OCT 14, 2015"
+game4.date = "2015-10-14"
+game4.visitor = "BLACKHAWKS"
+game4.home = "FLYERS"
+game4.time = "7:00 PM"
+game4.save
+
+game5 = Game.new
+# game5.date = "THU OCT 15, 2015"
+game5.date = "2015-10-15"
+game5.visitor = "BLACKHAWKS"
+game5.home = "CAPITALS"
+game5.time = "6:00 PM"
+game5.save
+
+game6 = Game.new
+# game6.date = "SAT OCT 17, 2015"
+game6.date = "2015-10-17"
+game6.visitor = "BLUE JACKETS"
+game6.home = "BLACKHAWKS"
+game6.time = "7:30 PM"
+game6.save
+
+game7 = Game.new
+# game7.date = "THU OCT 22, 2015"
+game7.date = "2015-10-22"
+game7.visitor = "PANTHERS"
+game7.home = "BLACKHAWKS"
+game7.time = "7:30 PM"
+game7.save
+
+game8 = Game.new
+# game8.date = "SAT OCT 24, 2015"
+game8.date = "2015-10-24"
+game8.visitor = "LIGHTNING"
+game8.home = "BLACKHAWKS"
+game8.time = "7:30 PM"
+game8.save
+
+game9 = Game.new
+# game9.date = "MON OCT 26, 2015"
+game9.date = "2015-10-26"
+game9.visitor = "DUCKS"
+game9.home = "BLACKHAWKS"
+game9.time = "7:30 PM"
+game9.save
+
+game10 = Game.new
+# game10.date = "THU OCT 29, 2015"
+game10.date = "2015-10-29"
+game10.visitor = "BLACKHAWKS"
+game10.home = "JETS"
+game10.time = "7:00 PM"
+game10.save
+
+game11 = Game.new
+# game11.date = "FRI OCT 30, 2015"
+game11.date = "2015-10-30"
+game11.visitor = "BLACKHAWKS"
+game11.home = "WILD "
+game11.time = "7:00 PM"
+game11.save
+
+game12 = Game.new
+# game12.date = "MON NOV 2, 2015"
+game12.date = "2015-11-02"
+game12.visitor = "KINGS"
+game12.home = "BLACKHAWKS"
+game12.time = "7:30 PM"
+game12.save
+
+game13 = Game.new
+# game13.date = "WED NOV 4, 2015"
+game13.date = "2015-11-04"
+game13.visitor = "BLUES"
+game13.home = "BLACKHAWKS"
+game13.time = "7:00 PM"
+game13.save
+
+game14 = Game.new
+# game14.date = "FRI NOV 6, 2015"
+game14.date = "2015-11-06"
+game14.visitor = "BLACKHAWKS"
+game14.home = "DEVILS"
+game14.time = "6:00 PM"
+game14.save
+
+game15 = Game.new
+# game15.date = "SUN NOV 8, 2015"
+game15.date = "2015-11-08"
+game15.visitor = "OILERS"
+game15.home = "BLACKHAWKS"
+game15.time = "7:00 PM"
+game15.save
+
+game16 = Game.new
+# game16.date = "THU NOV 12, 2015"
+game16.date = "2015-11-12"
+game16.visitor = "DEVILS"
+game16.home = "BLACKHAWKS"
+game16.time = "7:30 PM"
+game16.save
+
+game17 = Game.new
+# game17.date = "SAT NOV 14, 2015"
+game17.date = "2015-11-14"
+game17.visitor = "BLACKHAWKS"
+game17.home = "BLUES"
+game17.time = "7:00 PM"
+game17.save
+
+game18 = Game.new
+# game18.date = "SUN NOV 15, 2015"
+game18.date = "2015-11-15"
+game18.visitor = "FLAMES"
+game18.home = "BLACKHAWKS"
+game18.time = "7:30 PM"
+game18.save
+
+game19 = Game.new
+# game19.date = "WED NOV 18, 2015"
+game19.date = "2015-11-18"
+game19.visitor = "BLACKHAWKS"
+game19.home = "OILERS"
+game19.time = "8:30 PM"
+game19.save
+
+game20 = Game.new
+# game20.date = "WED NOV 20, 2015"
+game20.date = "2015-11-20"
+game20.visitor = "BLACKHAWKS"
+game20.home = "OILERS"
+game20.time = "8:30 PM"
+game20.save
+
+game21 = Game.new
+# game21.date = "SAT NOV 21, 2015"
+game21.date = "2015-11-21"
+game21.visitor = "BLACKHAWKS"
+game21.home = "CANUCKS"
+game21.time = "9:00 PM"
+game21.save
+
+game22 = Game.new
+# game22.date = "WED NOV 25, 2015"
+game22.date = "2015-11-25"
+game22.visitor = "BLACKHAWKS"
+game22.home = "SHARKS"
+game22.time = "9:00 PM"
+game22.save
+
+game23 = Game.new
+# game23.date = "FRI NOV 27, 2015"
+game23.date = "2015-11-27"
+game23.visitor = "BLACKHAWKS"
+game23.home = "DUCKS"
+game23.time = "4:00 PM"
+game23.save
+
+game24 = Game.new
+# game24.date = "SAT NOV 28, 2015"
+game24.date = "2015-11-28"
+game24.visitor = "BLACKHAWKS"
+game24.home = "KINGS"
+game24.time = "9:30 PM"
+game24.save
+
+game25 = Game.new
+#game25.date = "TUE DEC 1, 2015"
+game25.date = "2015-12-01"
+game25.visitor = "WILD"
+game25.home = "BLACKHAWKS"
+game25.time = "7:00 PM"
+game25.save
+
+game26 = Game.new
+#game26.date = "THU DEC 3, 2015"
+game26.date = "2015-12-03"
+game26.visitor = "BLACKHAWKS"
+game26.home = "SENATORS"
+game26.time = "6:30 PM"
+game26.save
+
+game27 = Game.new
+#game27.date = "SUN DEC 6, 2015"
+game27.date = "2015-12-06"
+game27.visitor = "JETS"
+game27.home = "BLACKHAWKS"
+game27.time = "4:00 PM"
+game27.save
+
+game28 = Game.new
+#game28.date = "TUE DEC 8, 2015"
+game28.date = "2015-12-08"
+game28.visitor = "PREDATORS"
+game28.home = "BLACKHAWKS"
+game28.time = "7:30 PM"
+game28.save
+
+game29 = Game.new
+#game29.date = "THU DEC 10, 2015"
+game29.date = "2015-12-10"
+game29.visitor = "BLACKHAWKS"
+game29.home = "PREDATORS"
+game29.time = "7:00 PM"
+game29.save
+
+game30 = Game.new
+#game30.date = "FRI DEC 11, 2015"
+game30.date = "2015-12-11"
+game30.visitor = "JETS"
+game30.home = "BLACKHAWKS"
+game30.time = "7:30 PM"
+game30.save
+
+game31 = Game.new
+#game31.date = "SUN DEC 13, 2015"
+game31.date = "2015-12-13"
+game31.visitor = "CANUCKS"
+game31.home = "BLACKHAWKS"
+game31.time = "6:00 PM"
+game31.save
+
+game32 = Game.new
+#game32.date = "TUE DEC 15, 2015"
+game32.date = "2015-12-15"
+game32.visitor = "AVALANCHE"
+game32.home = "BLACKHAWKS"
+game32.time = "7:30 PM"
+game32.save
+
+game33 = Game.new
+#game33.date = "THU DEC 17, 2015"
+game33.date = "2015-12-17"
+game33.visitor = "OILERS"
+game33.home = "BLACKHAWKS"
+game33.time = "7:30 PM"
+game33.save
+
+game34 = Game.new
+#game34.date = "SAT DEC 19, 2015"
+game34.date = "2015-12-19"
+game34.visitor = "BLACKHAWKS"
+game34.home = "SABRES"
+game34.time = "12:00 PM"
+game34.save
+
+game35 = Game.new
+#game35.date = "SUN DEC 20, 2015"
+game35.date = "2015-12-20"
+game35.visitor = "SHARKS"
+game35.home = "BLACKHAWKS"
+game35.time = "6:00 PM"
+game35.save
+
+game36 = Game.new
+#game36.date = "TUE DEC 22, 2015"
+game36.date = "2015-12-22"
+game36.visitor = "BLACKHAWKS"
+game36.home = "STARS"
+game36.time = "7:30 PM"
+game36.save
+
+game37 = Game.new
+#game37.date = "SUN DEC 27, 2015"
+game37.date = "2015-12-27"
+game37.visitor = "HURRICANES"
+game37.home = "BLACKHAWKS"
+game37.time = "6:00 PM"
+game37.save
+
+game38 = Game.new
+#game38.date = "TUE DEC 29, 2015"
+game38.date = "2015-12-29"
+game38.visitor = "BLACKHAWKS"
+game38.home = "COYOTES"
+game38.time = "8:00 PM"
+game38.save
+
+game39 = Game.new
+#game39.date = "THU DEC 31, 2015"
+game39.date = "2015-12-31"
+game39.visitor = "BLACKHAWKS"
+game39.home = "AVALANCHE"
+game39.time = "7:00 PM"
+game39.save
+
+game40 = Game.new
+#game40.date = "SUN JAN 3, 2016"
+game40.date = "2016-01-03"
+game40.visitor = "SENATORS"
+game40.home = "BLACKHAWKS"
+game40.time = "6:00 PM"
+game40.save
+
+game41 = Game.new
+#game41.date = "TUE JAN 5, 2016"
+game41.date = "2016-01-05"
+game41.visitor = "BLACKHAWKS"
+game41.home = "PENGUINS"
+game41.time = "6:00 PM"
+game41.save
+
+game42 = Game.new
+#game42.date = "WED JAN 6, 2016"
+game42.date = "2016-01-06"
+game42.visitor = "PENGUINS"
+game42.home = "BLACKHAWKS"
+game42.time = "7:00 PM"
+game42.save
+
+game43 = Game.new
+#game43.date = "FRI JAN 8, 2016"
+game43.date = "2016-01-08"
+game43.visitor = "SABRES"
+game43.home = "BLACKHAWKS"
+game43.time = "7:30  PM"
+game43.save
+
+game44 = Game.new
+#game44.date = "SUN JAN 10, 2016"
+game44.date = "2016-01-10"
+game44.visitor = "AVALANCHE"
+game44.home = "BLACKHAWKS"
+game44.time = "6:00  PM"
+game44.save
+
+game45 = Game.new
+#game45.date = "TUE JAN 12, 2016"
+game45.date = "2016-01-12"
+game45.visitor = "PREDATORS"
+game45.home = "BLACKHAWKS"
+game45.time = "7:30  PM"
+game45.save
+
+game46 = Game.new
+#game46.date = "THU JAN 14, 2016"
+game46.date = "2016-01-14"
+game46.visitor = "BLACKHAWKS"
+game46.home = "CANADIENS"
+game46.time = "6:30  PM"
+game46.save
+
+game47 = Game.new
+#game47.date = "FRI JAN 15, 2016"
+game47.date = "2016-01-15"
+game47.visitor = "BLACKHAWKS"
+game47.home = "MAPLE LEAFS"
+game47.time = "6:00  PM"
+game47.save
+
+game48 = Game.new
+#game48.date = "SUN JAN 17, 2016"
+game48.date = "2016-01-17"
+game48.visitor = "CANADIENS"
+game48.home = "BLACKHAWKS"
+game48.time = "6:00  PM"
+game48.save
+
+game49 = Game.new
+#game49.date = "TUE JAN 19, 2016"
+game49.date = "2016-01-19"
+game49.visitor = "BLACKHAWKS"
+game49.home = "PREDATORS"
+game49.time = "7:00  PM"
+game49.save
+
+game50 = Game.new
+#game50.date = "THU JAN 21, 2016"
+game50.date = "2016-01-21"
+game50.visitor = "BLACKHAWKS"
+game50.home = "LIGHTNING"
+game50.time = "6:30  PM"
+game50.save
+
+game51 = Game.new
+#game51.date = "FRI JAN 22, 2016"
+game51.date = "2016-01-22"
+game51.visitor = "BLACKHAWKS"
+game51.home = "PANTHERS"
+game51.time = "6:30  PM"
+game51.save
+
+game52 = Game.new
+#game52.date = "SUN JAN 24, 2016"
+game52.date = "2016-01-24"
+game52.visitor = "BLUES"
+game52.home = "BLACKHAWKS"
+game52.time = "6:00  PM"
+game52.save
+
+game53 = Game.new
+#game53.date = "TUE JAN 26, 2016"
+game53.date = "2016-01-26"
+game53.visitor = "BLACKHAWKS"
+game53.home = "HURRICANES"
+game53.time = "6:30  PM"
+game53.save
+
+game54 = Game.new
+#game54.date = "TUE FEB 2, 2016"
+game54.date = "2016-02-02"
+game54.visitor = "BLACKHAWKS"
+game54.home = "AVALANCHE"
+game54.time = "8:00  PM"
+game54.save
+
+game55 = Game.new
+#game55.date = "THU FEB 4, 2016"
+game55.date = "2016-02-04"
+game55.visitor = "BLACKHAWKS"
+game55.home = "COYOTES"
+game55.time = "8:00   PM"
+game55.save
+
+game56 = Game.new
+#game56.date = "SAT FEB 6, 2016"
+game56.date = "2016-02-06"
+game56.visitor = "BLACKHAWKS"
+game56.home = "STARS"
+game56.time = "7:00   PM"
+game56.save
+
+game57 = Game.new
+#game57.date = "TUE FEB 9, 2016"
+game57.date = "2016-02-09"
+game57.visitor = "SHARKS"
+game57.home = "BLACKHAWKS"
+game57.time = "7:30  PM"
+game57.save
+
+game58 = Game.new
+#game58.date = "THU FEB 11, 2016"
+game58.date = "2016-02-11"
+game58.visitor = "STARS"
+game58.home = "BLACKHAWKS"
+game58.time = "7:30  PM"
+game58.save
+
+game59 = Game.new
+#game59.date = "SAT FEB 13, 2016"
+game59.date = "2016-02-13"
+game59.visitor = "DUCKS"
+game59.home = "BLACKHAWKS"
+game59.time = "7:30  PM"
+game59.save
+
+game60 = Game.new
+#game60.date = "MON FEB 15, 2016"
+game60.date = "2016-02-15"
+game60.visitor = "MAPLE LEAFS"
+game60.home = "BLACKHAWKS"
+game60.time = "7:30  PM"
+game60.save
+
+game61 = Game.new
+#game61.date = "WED FEB 17, 2016"
+game61.date = "2016-02-17"
+game61.visitor = "BLACKHAWKS"
+game61.home = "RANGERS"
+game61.time = "7:00  PM"
+game61.save
+
+game62 = Game.new
+#game62.date = "SUN FEB 21, 2016"
+game62.date = "2016-02-21"
+game62.visitor = "BLACKHAWKS"
+game62.home = "WILD"
+game62.time = "2:30  PM"
+game62.save
+
+game63 = Game.new
+#game63.date = "THU FEB 25, 2016"
+game63.date = "2016-02-25"
+game63.visitor = "PREDATORS"
+game63.home = "BLACKHAWKS"
+game63.time = "7:00  PM"
+game63.save
+
+game64 = Game.new
+#game64.date = "SUN FEB 28, 2016"
+game64.date = "2016-02-28"
+game64.visitor = "CAPITALS"
+game64.home = "BLACKHAWKS"
+game64.time = "11:30  AM"
+game64.save
+
+game65 = Game.new
+#game65.date = "WED MAR 2, 2016"
+game65.date = "2016-03-02"
+game65.visitor = "BLACKHAWKS"
+game65.home = "RED WINGS"
+game65.time = "7:00 PM"
+game65.save
+
+game66 = Game.new
+#game66.date = "THU MAR 3, 2016"
+game66.date = "2016-03-03"
+game66.visitor = "BLACKHAWKS"
+game66.home = "BRUINS"
+game66.time = "6:00 PM"
+game66.save
+
+game67 = Game.new
+#game67.date = "SUN MAR 6, 2016"
+game67.date = "2016-03-06"
+game67.visitor = "RED WINGS"
+game67.home = "BLACKHAWKS"
+game67.time = "4:00 PM"
+game67.save
+
+game68 = Game.new
+#game68.date = "WED MAR 9, 2016"
+game68.date = "2016-03-09"
+game68.visitor = "BLACKHAWKS"
+game68.home = "BLUES"
+game68.time = "7:00 PM"
+game68.save
+
+game69 = Game.new
+#game69.date = "FRI MAR 11, 2016"
+game69.date = "2016-03-11"
+game69.visitor = "BLACKHAWKS"
+game69.home = "STARS"
+game69.time = "7:30 PM"
+game69.save
+
+game70 = Game.new
+#game70.date = "MON MAR 14, 2016"
+game70.date = "2016-03-14"
+game70.visitor = "KINGS"
+game70.home = "BLACKHAWKS"
+game70.time = "7:00  PM"
+game70.save
+
+game71 = Game.new
+#game71.date = "WED MAR 16, 2016"
+game71.date = "2016-03-16"
+game71.visitor = "FLYERS"
+game71.home = "BLACKHAWKS"
+game71.time = "7:00  PM"
+game71.save
+
+game72 = Game.new
+#game72.date = "FRI MAR 18, 2016"
+game72.date = "2016-03-18"
+game72.visitor = "BLACKHAWKS"
+game72.home = "JETS"
+game72.time = "7:00 PM"
+game72.save
+
+game73 = Game.new
+#game73.date = "SUN MAR 20, 2016"
+game73.date = "2016-03-20"
+game73.visitor = "WILD"
+game73.home = "BLACKHAWKS"
+game73.time = "7:30  PM"
+game73.save
+
+game74 = Game.new
+#game74.date = "TUE MAR 22, 2016"
+game74.date = "2016-03-22"
+game74.visitor = "STARS"
+game74.home = "BLACKHAWKS"
+game74.time = "7:30  PM"
+game74.save
+
+game75 = Game.new
+#game75.date = "SAT MAR 26, 2016"
+game75.date = "2016-03-26"
+game75.visitor = "BLACKHAWKS"
+game75.home = "FLAMES"
+game75.time = "9:00 PM"
+game75.save
+
+game76 = Game.new
+#game76.date = "SUN MAR 27, 2016"
+game76.date = "2016-03-27"
+game76.visitor = "BLACKHAWKS"
+game76.home = "CANUCKS"
+game76.time = "7:00 PM"
+game76.save
+
+game77 = Game.new
+#game77.date = "TUE MAR 29, 2016"
+game77.date = "2016-03-29"
+game77.visitor = "BLACKHAWKS"
+game77.home = "WILD"
+game77.time = "7:00 PM"
+game77.save
+
+game78 = Game.new
+#game78.date = "FRI APR 1, 2016"
+game78.date = "2016-04-01"
+game78.visitor = "BLACKHAWKS"
+game78.home = "JETS"
+game78.time = "7:00 PM"
+game78.save
+
+game79 = Game.new
+#game79.date = "SUN APR 3, 2016"
+game79.date = "2016-04-03"
+game79.visitor = "BRUINS"
+game79.home = "BLACKHAWKS"
+game79.time = "11:30 PM"
+game79.save
+
+game80 = Game.new
+#game80.date = "TUE APR 5, 2016"
+game80.date = "2016-04-05"
+game80.visitor = "COYOTES"
+game80.home = "BLACKHAWKS"
+game80.time = "7:30  PM"
+game80.save
+
+game81 = Game.new
+#game81.date = "THU APR 7, 2016"
+game81.date = "2016-04-07"
+game81.visitor = "BLUES"
+game81.home = "BLACKHAWKS"
+game81.time = "7:30  PM"
+game81.save
+
+game82 = Game.new
+#game82.date = "SAT APR 9, 2016"
+game82.date = "2016-04-09"
+game82.visitor = "BLACKHAWKS"
+game82.home = "BLUE JACKETS"
+game82.time = "6:00 PM"
+game82.save
+
 
 
 

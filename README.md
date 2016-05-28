@@ -63,6 +63,9 @@ Final Project
 
 * Deployment to public url: https://tjlfinal.herokuapp.com
 
+* Included “Forgot Password” functionality via email verification. Reference and source for some
+  of the code: The Ruby on Rails Tutorial (3rd Ed.), Michael Hartl.
+
 
 
 

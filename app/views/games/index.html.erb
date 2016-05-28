@@ -1,5 +1,9 @@
 <h1>Schedule</h1>
 
+<div class="table_page">
+
+<h3>October</h3>
+
 <table>
 
   <tr>
@@ -9,8 +13,7 @@
     <th>Time</th>
   </tr>
 
-
-<% @games.each do |game| %>
+<% @games.where(:date => "2015-10-01".."2015-10-30").each do |game| %>
 
   <tr>
   	<td><%= game.date %></td> 
@@ -22,3 +25,161 @@
 <% end %>
 
 </table>
+
+<br>
+
+<h3>November</h3>
+<table>
+
+  <tr>
+    <th>Date</th>
+    <th>Home</th>
+    <th>Visitor</th>
+    <th>Time</th>
+  </tr>
+
+<% @games.where(:date => "2015-11-01".."2015-11-30").each do |game| %>
+
+  <tr>
+    <td><%= game.date %></td> 
+    <td><%= game.home %></td> 
+    <td><%= game.visitor %></td> 
+    <td><%= game.time %></td> 
+  </tr> 
+
+<% end %>
+
+</table>
+
+
+<br>
+
+<h3>December</h3>
+<table>
+
+  <tr>
+    <th>Date</th>
+    <th>Home</th>
+    <th>Visitor</th>
+    <th>Time</th>
+  </tr>
+
+<% @games.where(:date => "2015-12-01".."2015-12-31").each do |game| %>
+
+  <tr>
+    <td><%= game.date %></td> 
+    <td><%= game.home %></td> 
+    <td><%= game.visitor %></td> 
+    <td><%= game.time %></td> 
+  </tr> 
+
+<% end %>
+
+</table>
+
+<br>
+
+<h3>January</h3>
+<table>
+
+  <tr>
+    <th>Date</th>
+    <th>Home</th>
+    <th>Visitor</th>
+    <th>Time</th>
+  </tr>
+
+<% @games.where(:date => "2016-01-01".."2016-01-31").each do |game| %>
+
+  <tr>
+    <td><%= game.date %></td> 
+    <td><%= game.home %></td> 
+    <td><%= game.visitor %></td> 
+    <td><%= game.time %></td> 
+  </tr> 
+
+<% end %>
+
+</table>
+
+<br>
+
+<h3>February</h3>
+<table>
+
+  <tr>
+    <th>Date</th>
+    <th>Home</th>
+    <th>Visitor</th>
+    <th>Time</th>
+  </tr>
+
+<% @games.where(:date => "2016-02-01".."2016-02-28").each do |game| %>
+
+  <tr>
+    <td><%= game.date %></td> 
+    <td><%= game.home %></td> 
+    <td><%= game.visitor %></td> 
+    <td><%= game.time %></td> 
+  </tr> 
+
+<% end %>
+
+</table>
+
+
+<br>
+
+<h3>March</h3>
+<table>
+
+  <tr>
+    <th>Date</th>
+    <th>Home</th>
+    <th>Visitor</th>
+    <th>Time</th>
+  </tr>
+
+<% @games.where(:date => "2016-03-01".."2016-03-31").each do |game| %>
+
+  <tr>
+    <td><%= game.date %></td> 
+    <td><%= game.home %></td> 
+    <td><%= game.visitor %></td> 
+    <td><%= game.time %></td> 
+  </tr> 
+
+<% end %>
+
+</table>
+
+<br>
+
+<h3>April</h3>
+<table>
+
+  <tr>
+    <th>Date</th>
+    <th>Home</th>
+    <th>Visitor</th>
+    <th>Time</th>
+  </tr>
+
+<% @games.where(:date => "2016-04-01".."2016-04-30").each do |game| %>
+
+  <tr>
+    <td><%= game.date %></td> 
+    <td><%= game.home %></td> 
+    <td><%= game.visitor %></td> 
+    <td><%= game.time %></td> 
+  </tr> 
+
+<% end %>
+
+</table>
+
+
+</div>
+
+
+
