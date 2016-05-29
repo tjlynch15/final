@@ -31,14 +31,6 @@ ActiveRecord::Schema.define(version: 20160522042510) do
   add_index "contains_products", ["cart_id"], name: "index_contains_products_on_cart_id"
   add_index "contains_products", ["product_id"], name: "index_contains_products_on_product_id"
 
-  create_table "credit_cards", force: :cascade do |t|
-    t.string  "card_number"
-    t.string  "expiration"
-    t.integer "user_id"
-  end
-
-  add_index "credit_cards", ["user_id"], name: "index_credit_cards_on_user_id"
-
   create_table "games", force: :cascade do |t|
     t.string "date"
     t.text   "visitor"

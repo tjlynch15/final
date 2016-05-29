@@ -51,10 +51,10 @@ User
   reset_sent_at: datetime
 
   
-CreditCard
-  card_number: string
-  expiration: string
-  user_id: integer
+# CreditCard
+#   card_number: string
+#   expiration: string
+#   user_id: integer
 
 Review
   rating: integer
