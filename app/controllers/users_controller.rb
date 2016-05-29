@@ -28,7 +28,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    User.delete(params[:id])
+    User.destroy(params[:id])
     # reset_session
     redirect_to users_url
   end
