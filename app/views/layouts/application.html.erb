@@ -11,10 +11,18 @@
 
   <nav>
     <ul>
-      <li><%= link_to "Players", players_path %></li>
-      <li><%= link_to "Schedule", games_path %></li>
-      <li><%= link_to "Merchandise", categories_path %></li>
-      <li><%= link_to "Users", users_path %></li>
+      <li><%= link_to "Players", players_url %></li>
+      <li><%= link_to "Schedule", games_url %></li>
+      <li><%= link_to "Merchandise", categories_url %></li>
+
+      <% if session["user_id"].present? %>
+      <% current_user = User.find_by(id: session["user_id"]) %>
+        <% if current_user.admin %>
+          <li><%= link_to "Users", users_url %></li>
+          <li><%= link_to "Orders", orders_url %></li>
+        <% end %>
+      <% end %>
+
     </ul>
 
     <ul class="nav-right">

@@ -10,9 +10,9 @@ class CartsController < ApplicationController
 
   def index
 
-    # if session["cart_id"].present?
-    if session[:user_id]
-      @cart = Cart.find_by(user_id: session["user_id"])
+    if session["cart_id"].present?
+    # if session[:user_id]
+      @cart = Cart.find_by(id: session["cart_id"])
       # @cart = session[:cart]
     else
       @cart = {}
@@ -24,8 +24,8 @@ class CartsController < ApplicationController
 
   def update
 
-    if session["user_id"].present?
-        cart = Cart.find_by(user_id: session["user_id"])
+    if session["cart_id"].present?
+        cart = Cart.find_by(id: session["cart_id"])
         ContainsProduct.create(cart_id: cart.id, product_id: params[:id])
     else
         redirect_to categories_url, notice: "Must be signed in to Add to Cart"

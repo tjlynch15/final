@@ -5,6 +5,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>User ID</th>
       <th>Email</th>
       <th>Address</th>
       <th></th>
@@ -14,6 +15,7 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= user.name %></td>
+        <td><%= user.id %></td>
         <td><%= user.email %></td>
         <td><%= user.address %></td>
         <td><%= link_to "Delete", user_path(user), method: :delete, data: { confirm: "Are you sure?" } %></td>

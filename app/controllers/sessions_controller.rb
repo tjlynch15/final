@@ -13,13 +13,13 @@ class SessionsController < ApplicationController
         flash["notice"] = "Welcome back, #{user.name}"
 
 
-        # session["cart_id"] = user.id
-        if !Cart.find_by(user_id: user.id).present?
-          cart = Cart.new
-          cart.user_id = user.id
-          cart.save
-        else
-        end
+        # if !Cart.find_by(user_id: user.id).present?
+        cart = Cart.new
+        cart.user_id = user.id
+        cart.save
+        session["cart_id"] = cart.id
+        # else
+        # end
 
         redirect_to categories_url
         return

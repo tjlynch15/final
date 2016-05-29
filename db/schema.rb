@@ -50,13 +50,12 @@ ActiveRecord::Schema.define(version: 20160522042510) do
     t.string  "date"
     t.integer "total_amount"
     t.integer "user_id"
-    t.integer "credit_card_id"
     t.integer "cart_id"
     t.text    "billing_address"
+    t.integer "credit_card_num"
   end
 
   add_index "orders", ["cart_id"], name: "index_orders_on_cart_id"
-  add_index "orders", ["credit_card_id"], name: "index_orders_on_credit_card_id"
   add_index "orders", ["user_id"], name: "index_orders_on_user_id"
 
   create_table "players", force: :cascade do |t|

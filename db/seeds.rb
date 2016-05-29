@@ -8,7 +8,7 @@ Game.delete_all
 
 jerseys = Category.create(:name => "Jerseys")
 hats = Category.create(:name => "Hats")
-collectibles = Category.create(:name => "Collectbles")
+collectibles = Category.create(:name => "Collectibles")
 
 anisimov = Player.new
 anisimov.number = 15

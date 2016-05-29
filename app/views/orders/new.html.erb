@@ -1,0 +1,82 @@
+
+<h1>Order</h1>
+
+<div class=details>
+
+
+<h2><%= @user.name %></h2>
+
+<% total = 0 %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Quantity</th>
+  </tr>
+
+
+<% @cart.products.uniq.each do |product| %>
+
+  <% quantity = @cart.products.where(id: product.id).count %>
+
+  <tr>
+    <td><%= link_to product.name, "/products/#{product.id}" %></td>
+    <td><%= product.description %></td> 
+    <td><%= number_to_currency(product.price/100.00) %></td> 
+    <td><%= quantity %></td>  
+  </tr> 
+  <% total = total += (quantity * product.price)/100.00 %>
+
+<% end %>
+
+</table>
+
+<br>
+<p><b>Total: <%= number_to_currency(total) %></b></p>
+
+
+<div class=container3>
+
+<%= form_tag orders_url, :method => :post do %>
+
+  <br>
+  <%= label_tag :date, "Date" %>
+  <br>
+  <%= text_field_tag :date, Time.zone.now, :size => 40 %>
+  <br>
+  <br>
+  <%= label_tag :total_amount, "Total Amount" %>
+  <br>
+  <%= text_field_tag :total_amount, total, :size => 40 %>
+  <br>
+  <br>
+  <%= label_tag :address, "Address" %>
+  <br>
+  <%= text_field_tag :address, @user.address, :size => 80, required: true %>
+  <br>
+  <br>
+  <%= label_tag :credit_card_num, "Credit Card Id" %>
+  <br>
+  <%= text_field_tag :credit_card_num, '', :size => 40, required: true %>
+  <br>
+  <%= hidden_field_tag :user_id, @user.id %>
+  <%= hidden_field_tag :cart_id, @cart.id %>
+
+  <%= submit_tag "Submit Order", :class => 'form_button' %>
+
+
+<% end %>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+

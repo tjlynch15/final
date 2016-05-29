@@ -1,7 +1,9 @@
 class User < ActiveRecord::Base
 
   has_secure_password
-  has_many :orders
+
+  has_many :orders, :dependent => :destroy
+  has_many :carts, :dependent => :destroy
 
   attr_accessor :reset_token
   before_save   :downcase_email

@@ -1,0 +1,33 @@
+<h1>
+  <%= @order.id %>
+</h1>
+
+<div class=details>
+
+    <p><strong>Order ID</strong> <%= @order.id %></p>
+    <p><strong>Date</strong> <%= @order.date %></p>
+    <p><strong>User ID</strong> <%= @order.user_id %></p>
+    <p><strong>Address ID</strong> <%= @order.billing_address %></p>
+    <p><strong>Credit Card</strong> <%= @order.credit_card_num %></p>
+    <p><strong>Total</strong> <%= number_to_currency(@order.total_amount) %></p> 
+
+
+    <% cart = Cart.find_by(id: @order.cart_id) %>
+
+<table>
+
+    <% cart.products.uniq.each do |product| %>
+
+    <% quantity = cart.products.where(id: product.id).count %>
+
+    <tr>
+      <td><%= product.name %></td>
+      <td><%= product.description %></td> 
+      <td><%= number_to_currency(product.price/100.00) %></td> 
+      <td><%= quantity %></td> 
+    </tr> 
+    <% end %>
+
+</table>   
+
+</div>
