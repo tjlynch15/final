@@ -5,7 +5,7 @@ class OrdersController < ApplicationController
     if session[:user_id]
       @user = User.find_by(id: session["user_id"])
       @cart = Cart.find_by(id: session["cart_id"])
-      # @order = Order.new
+      
     else     
     end
   end
@@ -48,7 +48,7 @@ class OrdersController < ApplicationController
 
 
   def destroy
-    Order.delete(params[:id])
+    Order.destroy(params[:id])
     redirect_to orders_url, notice: "Order Deleted"
   end
 

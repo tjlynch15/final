@@ -1,10 +1,7 @@
 class CartsController < ApplicationController
 
   def new
-    # cart = Cart.new
-    # cart.user_id = session["user_id"]
-    # cart.save
-    # redirect_to categories_url
+    
   end
 
 

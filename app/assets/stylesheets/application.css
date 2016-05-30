@@ -30,17 +30,10 @@ input, select, textarea {
   margin-top: 8px;
 }
 
-.container {
-  color: white;
-  margin: 10px auto;
-  padding: 10px;
-}
-
 
 nav {
   background: #000;
   color: white;
-  /*width: 100%;*/
   padding: 8px;
   font-size: 18px;
 }
@@ -81,7 +74,6 @@ h2 {
   margin-left: 10px;
   border-bottom: solid 2px #AAA;
   padding-bottom: 12px;
-  /*color: white;*/
 }
 
 h3 {
@@ -146,7 +138,6 @@ h1 small a:hover {
 h2 small a {
   font-size: 14px;
   font-weight: normal;
-  /*color: #999;*/
   margin-left: 12px;
 }
 
@@ -168,14 +159,14 @@ h2 small a {
 .details {
   width: 80%;
   margin: auto;
-  /*text-align: center;*/
+  margin-top: 40px;
+  padding: 10px 10px 10px 10px;
   background-color: white;
 }
 
 .reviews {
   width: 80%;
   margin: auto;
-  /*margin: 0px 0px 0px 100px;*/
   padding: 0px 0px 10px 300px;
 }
 .reviews h3 {
@@ -189,10 +180,10 @@ form label { margin-right: 12px;}
 
 table {
   margin: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   border-collapse: collapse;
-  width: 70%;
+  width: 80%;
 }
 table th {  
   color: #000;
@@ -207,38 +198,37 @@ table td {
   background-color: lightgray;
 }
 
-
-/*nav form input {
-  border-radius: 6px;
-  margin: 0;
-  width: 400px;
-}*/
-
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  background-color: white;
+}
 
 .container2 {
   width: 40%;
   margin: auto;
-  padding: 0px 60px 10px 60px;
+  margin-top: 40px;
+  padding: 10px 60px 10px 60px;
   background-color: lightgray;
 }
 
 .container3 {
   width: 80%;
   margin: auto;
-  padding: 0px 60px 10px 60px;
+  margin-top: 40px;
+  padding: 10px 60px 10px 60px;
   background-color: lightgray;
 }
 
 
 .form_button {
-  /*background-color: white;*/
   background-color: #3366CC;
   border-radius: 8px;
 }
 .form_button:hover {
     background-color: #3333CC;
-    /*background-color: #4CAF50;*/
-    /*color: white;*/
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -246,7 +236,6 @@ table td {
   text-align: center;
   color: white;
 }
-
 .table_page a {
   color: white;
   border-bottom: dotted 1px white;
@@ -263,13 +252,32 @@ table td {
 .player_details {
   width: 80%;
   margin: auto;
+  margin-top: 40px;
   background-color: white;
 }
-
 .player_stats {
   margin: auto;
   padding: 10px 0px 10px 180px;
 }
+
+
+.categories {
+  width: 40%;
+  margin: auto;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  background-color: white;
+}
+.categories a {
+  font-size: 20px;
+  color: darkred;
+  border-bottom: dotted 1px darkred;
+}
+.categories a:hover {
+  text-decoration: none;
+  border-bottom: solid 1px darkred;
+}
+
 
 
 
