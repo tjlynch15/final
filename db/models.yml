@@ -32,7 +32,7 @@ Order
   date: string  
   total_amount: integer
   user_id: integer
-  credit_card_num: integer
+  credit_card_num: string
   cart_id: integer
   billing_address: text
 

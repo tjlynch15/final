@@ -1,13 +1,26 @@
 
-<%= form_for(@order, url: new_order_url do |f| %>
+<%= @order.errors.full_messages %>
 
-  <%= hidden_field_tag :email, @user.email %>
 
-  <p><%= f.address :address %></p>
-  <p><%= f.address_field :address %></p>
+<%= form_for @order do |f| %>
 
-  <p><%= f.label :total_amount, "Amount" %></p>
-  <p><%= f.total_field :total_amount %></p>
+  <p><%= f.label :date, "Date" %></p>
+  <p><%= f.text_field :date, value: Time.zone.now, size: 40 %></p>
+  <br>
+  <p><%= f.label :total_amount, "Total Amount" %></p>
+  <p><%= f.text_field :total_amount, value: @total, size: 40 %></p>
+  <br>
+  <p><%= f.label :billing_address, "Address" %></p>
+  <p><%= f.text_field :billing_address, value: @user.address, size: 80 %></p>
+  <br>
+  <p><%= f.label :credit_card_num, "Credit Card Number" %></p>
+  <p><%= f.text_field :credit_card_num, size: 40 %></p>
+  <br>
+  <%= hidden_field_tag :user_id, @user.id %>
+  <%= hidden_field_tag :cart_id, @cart.id %>
 
   <p><%= f.submit "Submit_Order", class: "form_button" %></p>
 <% end %>
+
+
+

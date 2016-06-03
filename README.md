@@ -58,8 +58,8 @@ Final Project
   Clicking the Submit Order button creates an Order. Each order will have an order date, amount, billing
   address, credit card number, etc.
 
-* The user will confirm the order and make payment using a credit card. A credit card will have
-  a credit card number and expiration date.
+* Order model includes validations for billing_address and credit_card_num (presence), as well as
+  validation of credit_card_num length (must be 11 characters).
 
 * Users are able to post reviews of products, and see all reviews posted for a given product.
 
@@ -72,6 +72,9 @@ Final Project
 
 * Included “Forgot Password” functionality via email verification. Reference and source for some
   of the code: The Ruby on Rails Tutorial (3rd Ed.), Michael Hartl.
+
+* Added a little JQuery to Schedule page. Clicking on a particular month will toggle display of the
+  schedule table. Just playing around with JQuery a little bit.
 
 
 

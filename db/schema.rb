@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20160522042510) do
     t.integer "user_id"
     t.integer "cart_id"
     t.text    "billing_address"
-    t.integer "credit_card_num"
+    t.string  "credit_card_num"
   end
 
   add_index "orders", ["cart_id"], name: "index_orders_on_cart_id"
