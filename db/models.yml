@@ -36,10 +36,6 @@ Order
   cart_id: integer
   billing_address: text
 
-# OrderItem
-#   order_id: integer
-#   product_id: integer
-
 User
   name: text
   email: text
@@ -60,7 +56,6 @@ Review
   rating: integer
   body: text
   product_id: integer
-  # user_id: integer
 
 Game
   date: string

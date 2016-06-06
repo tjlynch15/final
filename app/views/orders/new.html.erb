@@ -27,14 +27,14 @@
     <td><%= number_to_currency(product.price/100.00) %></td> 
     <td><%= quantity %></td>  
   </tr> 
-  <% @total = @total += (quantity * product.price)/100.00 %>
+  <% @total = @total += (quantity * product.price) %>
 
 <% end %>
 
 </table>
 
 <br>
-<p><b>Total: <%= number_to_currency(@total) %></b></p>
+<p><b>Total: <%= number_to_currency(@total/100.00) %></b></p>
 
 
 <div class=container3>

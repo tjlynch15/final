@@ -1,15 +1,20 @@
 <div class=details>
 
-<h2>My Account</h2>
+<h2>
+  My Account
+  <% if @user.id == session[:user_id].to_i %>
+    <small>
+      <%= link_to "Edit This User", edit_user_path(@user.id) %>
+    </small>
+</h2>
 
-<% if @user.id == session[:user_id].to_i %>
-  <p>Name: <%= @user.name %></p>
-  <p>Email: <%= @user.email %></p>
-  <p>Address: <%= @user.address %></p>
-<% else %>
+    <p>Name: <%= @user.name %></p>
+    <p>Email: <%= @user.email %></p>
+    <p>Address: <%= @user.address %></p>
+  <% else %>
 
-<h3>Unauthorized</h3>
+    <h3>Unauthorized</h3>
 
-<% end %>
+  <% end %>
 
 </div>

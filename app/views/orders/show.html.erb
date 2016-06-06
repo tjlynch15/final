@@ -9,7 +9,7 @@
     <p><strong>User ID:</strong> <%= @order.user_id %></p>
     <p><strong>Billing Address:</strong> <%= @order.billing_address %></p>
     <p><strong>Credit Card:</strong> <%= @order.credit_card_num %></p>
-    <p><strong>Total:</strong> <%= number_to_currency(@order.total_amount) %></p> 
+    <p><strong>Total:</strong> <%= number_to_currency(@order.total_amount/100.00) %></p> 
     <br>
     <p><strong>Item List:</strong>
 

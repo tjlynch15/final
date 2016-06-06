@@ -6,7 +6,6 @@ class CategoriesController < ApplicationController
 
   def show
     category = Category.find_by(id: params[:id])
-    # @products = Product.where(category_id: category.id)
     @products = category.products
   end
 
@@ -18,7 +17,7 @@ class CategoriesController < ApplicationController
     category = Category.new
     category.name = params[:name]
     category.save
-    redirect_to "http://localhost:3000/categories"
+    redirect_to categories_url
   end
 
   def edit
@@ -29,13 +28,13 @@ class CategoriesController < ApplicationController
     category = Category.find_by(id: params[:id])
     category.name = params[:name]
     category.save
-    redirect_to "http://localhost:3000/categories"
+    redirect_to categories_url
   end
 
   def destroy
     category = Category.find_by(id: params[:id])
     category.delete
-    redirect_to "http://localhost:3000/categories"
+    redirect_to categories_url
   end
   
 end

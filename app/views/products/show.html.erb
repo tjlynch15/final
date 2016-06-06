@@ -36,17 +36,13 @@
     <option>1 star</option>
     </select>
   
-    <!-- <input type="hidden" name="movie_id" value="<%#= @product.id %>"> -->
-    <%= hidden_field_tag :product_id, @product.id %>
-    
+    <%= hidden_field_tag :product_id, @product.id %>  
     <br>
     <%= text_area_tag :body, '', rows: 4, cols: 50 %>
     <br>
     <%= submit_tag "Add Review" %>
   <% end %>
 
-
-  <!-- <div class=reviews> -->
 
   <h3>Reviews</h3>
 

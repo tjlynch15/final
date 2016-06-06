@@ -18,7 +18,7 @@
     <td><%= link_to order.id, order_url(order.id) %></td>
   	<td><%= order.date %></td> 
   	<td><%= order.user_id %></td> 
-  	<td><%= number_to_currency(order.total_amount) %></td>
+  	<td><%= number_to_currency(order.total_amount/100.00) %></td>
     <td><%= link_to "Delete Order", order_url(order.id), :method => :delete %></td>
 
   </tr>	
