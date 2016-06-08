@@ -1,7 +1,7 @@
 <div class=details>
 
 <h2>
-  My Account
+  User Profile
   <% if @user.id == session[:user_id].to_i %>
     <small>
       <%= link_to "Edit This User", edit_user_path(@user.id) %>

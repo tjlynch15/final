@@ -61,12 +61,13 @@ Final Project
 * Order model includes validations for billing_address and credit_card_num (presence), as well as
   validation of credit_card_num length (must be 11 characters).
 
-* Users are able to post reviews of products, and see all reviews posted for a given product.
-
 * Views for updating, deleting and creating new players and products are visible/accessible to
   a user who is an admin. Seed file contains user "admin" email "admin@example.org" password "nimda".
   Also, navigation bar includes a "Users" link and an "Orders" link that are only visible/accessible
   to a user that is an admin.
+
+* Users can view their profile by clicking on the user name in the navigation bar ("Hello, username").
+  Users can update their profile by clicking on the edit user link on the profile page.
 
 * Deployment to public url: https://tjlfinal.herokuapp.com
 
